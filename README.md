@@ -1,0 +1,1 @@
+Este es un repositorio con los ejemplos que iremos creando a lo largo del curso de POO 2026-2
