@@ -144,6 +144,14 @@
       <DependentUpon>robots.h</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Controller\Controller.vcxproj">
+      <Project>{45781045-5a12-7d7b-3c55-9ccb593bf635}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\Model\Model.vcxproj">
+      <Project>{30c04796-38c1-5553-a373-7bef0a5cdeba}</Project>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>

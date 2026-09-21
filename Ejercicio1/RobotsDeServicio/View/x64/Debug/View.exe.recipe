@@ -2,7 +2,13 @@
 <Project>
   <ProjectOutputs>
     <ProjectOutput>
-      <FullPath>C:\Users\alexis-pc\OneDrive\Documentos\Universidad\Courses\Programacion_orientada_a_objetos\2026-2\Ejercicios\ejerciciosPOO2026-2\Ejercicio1\RobotsDeServicio\x64\Debug\View.exe</FullPath>
+      <FullPath>C:\Users\alexis-pc\OneDrive\Documentos\Universidad\Courses\Programacion_orientada_a_objetos\ejerciciosPOO2026-2\Ejercicio1\RobotsDeServicio\x64\Debug\Model.dll</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>C:\Users\alexis-pc\OneDrive\Documentos\Universidad\Courses\Programacion_orientada_a_objetos\ejerciciosPOO2026-2\Ejercicio1\RobotsDeServicio\x64\Debug\Controller.dll</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>C:\Users\alexis-pc\OneDrive\Documentos\Universidad\Courses\Programacion_orientada_a_objetos\ejerciciosPOO2026-2\Ejercicio1\RobotsDeServicio\x64\Debug\View.exe</FullPath>
     </ProjectOutput>
   </ProjectOutputs>
   <ContentFiles />

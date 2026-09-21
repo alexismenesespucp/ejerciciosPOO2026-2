@@ -1,0 +1,13 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "c:\\users\\alexis-pc\\onedrive\\documentos\\universidad\\courses\\programacion_orientada_a_objetos\\ejerciciospoo2026-2\\ejercicio1\\robotsdeservicio\\controller\\controller.cpp",
+        "ProvidedModule": "",
+        "Includes": [
+            "c:\\users\\alexis-pc\\onedrive\\documentos\\universidad\\courses\\programacion_orientada_a_objetos\\ejerciciospoo2026-2\\ejercicio1\\robotsdeservicio\\controller\\pch.h",
+            "c:\\users\\alexis-pc\\onedrive\\documentos\\universidad\\courses\\programacion_orientada_a_objetos\\ejerciciospoo2026-2\\ejercicio1\\robotsdeservicio\\controller\\controller.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}

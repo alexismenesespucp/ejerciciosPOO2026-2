@@ -1,17 +1,29 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\alexis-pc\\OneDrive\\Documentos\\Universidad\\Courses\\Programacion_orientada_a_objetos\\2026-2\\Ejercicios\\ejerciciosPOO2026-2\\Ejercicio1\\RobotsDeServicio\\",
+  "WorkspaceRootPath": "C:\\Users\\alexis-pc\\OneDrive\\Documentos\\Universidad\\Courses\\Programacion_orientada_a_objetos\\ejerciciosPOO2026-2\\Ejercicio1\\RobotsDeServicio\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{13A3E606-CEC7-8279-14A3-1B32473E3C76}|View\\View.vcxproj|C:\\Users\\alexis-pc\\OneDrive\\Documentos\\Universidad\\Courses\\Programacion_orientada_a_objetos\\2026-2\\Ejercicios\\ejerciciosPOO2026-2\\Ejercicio1\\RobotsDeServicio\\View\\robots.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}|Form",
-      "RelativeMoniker": "D:0:0:{13A3E606-CEC7-8279-14A3-1B32473E3C76}|View\\View.vcxproj|solutionrelative:View\\robots.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{13A3E606-CEC7-8279-14A3-1B32473E3C76}|View\\View.vcxproj|C:\\Users\\alexis-pc\\OneDrive\\Documentos\\Universidad\\Courses\\Programacion_orientada_a_objetos\\2026-2\\Ejercicios\\ejerciciosPOO2026-2\\Ejercicio1\\RobotsDeServicio\\View\\robots.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{13A3E606-CEC7-8279-14A3-1B32473E3C76}|View\\View.vcxproj|C:\\Users\\alexis-pc\\OneDrive\\Documentos\\Universidad\\Courses\\Programacion_orientada_a_objetos\\ejerciciosPOO2026-2\\Ejercicio1\\RobotsDeServicio\\View\\robots.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{13A3E606-CEC7-8279-14A3-1B32473E3C76}|View\\View.vcxproj|solutionrelative:View\\robots.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{13A3E606-CEC7-8279-14A3-1B32473E3C76}|View\\View.vcxproj|C:\\Users\\alexis-pc\\OneDrive\\Documentos\\Universidad\\Courses\\Programacion_orientada_a_objetos\\2026-2\\Ejercicios\\ejerciciosPOO2026-2\\Ejercicio1\\RobotsDeServicio\\View\\robots.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{13A3E606-CEC7-8279-14A3-1B32473E3C76}|View\\View.vcxproj|C:\\Users\\alexis-pc\\OneDrive\\Documentos\\Universidad\\Courses\\Programacion_orientada_a_objetos\\ejerciciosPOO2026-2\\Ejercicio1\\RobotsDeServicio\\View\\robots.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}|Form",
+      "RelativeMoniker": "D:0:0:{13A3E606-CEC7-8279-14A3-1B32473E3C76}|View\\View.vcxproj|solutionrelative:View\\robots.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{45781045-5A12-7D7B-3C55-9CCB593BF635}|Controller\\Controller.vcxproj|C:\\Users\\alexis-pc\\OneDrive\\Documentos\\Universidad\\Courses\\Programacion_orientada_a_objetos\\ejerciciosPOO2026-2\\Ejercicio1\\RobotsDeServicio\\Controller\\Controller.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{45781045-5A12-7D7B-3C55-9CCB593BF635}|Controller\\Controller.vcxproj|solutionrelative:Controller\\Controller.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{45781045-5A12-7D7B-3C55-9CCB593BF635}|Controller\\Controller.vcxproj|C:\\Users\\alexis-pc\\OneDrive\\Documentos\\Universidad\\Courses\\Programacion_orientada_a_objetos\\ejerciciosPOO2026-2\\Ejercicio1\\RobotsDeServicio\\Controller\\Controller.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{45781045-5A12-7D7B-3C55-9CCB593BF635}|Controller\\Controller.vcxproj|solutionrelative:Controller\\Controller.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{30C04796-38C1-5553-A373-7BEF0A5CDEBA}|Model\\Model.vcxproj|C:\\Users\\alexis-pc\\OneDrive\\Documentos\\Universidad\\Courses\\Programacion_orientada_a_objetos\\ejerciciosPOO2026-2\\Ejercicio1\\RobotsDeServicio\\Model\\Model.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{30C04796-38C1-5553-A373-7BEF0A5CDEBA}|Model\\Model.vcxproj|solutionrelative:Model\\Model.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{13A3E606-CEC7-8279-14A3-1B32473E3C76}|View\\View.vcxproj|C:\\Users\\alexis-pc\\OneDrive\\Documentos\\Universidad\\Courses\\Programacion_orientada_a_objetos\\ejerciciosPOO2026-2\\Ejercicio1\\RobotsDeServicio\\View\\robots.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{13A3E606-CEC7-8279-14A3-1B32473E3C76}|View\\View.vcxproj|solutionrelative:View\\robots.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
@@ -22,7 +34,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 8,
           "Children": [
             {
               "$type": "Bookmark",
@@ -42,41 +54,80 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Controller.cpp",
+              "DocumentMoniker": "C:\\Users\\alexis-pc\\OneDrive\\Documentos\\Universidad\\Courses\\Programacion_orientada_a_objetos\\ejerciciosPOO2026-2\\Ejercicio1\\RobotsDeServicio\\Controller\\Controller.cpp",
+              "RelativeDocumentMoniker": "Controller\\Controller.cpp",
+              "ToolTip": "C:\\Users\\alexis-pc\\OneDrive\\Documentos\\Universidad\\Courses\\Programacion_orientada_a_objetos\\ejerciciosPOO2026-2\\Ejercicio1\\RobotsDeServicio\\Controller\\Controller.cpp",
+              "RelativeToolTip": "Controller\\Controller.cpp",
+              "ViewState": "AgIAABwAAAAAAAAAAAAYwCsAAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2026-09-21T20:31:28.075Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "robots.h",
-              "DocumentMoniker": "C:\\Users\\alexis-pc\\OneDrive\\Documentos\\Universidad\\Courses\\Programacion_orientada_a_objetos\\2026-2\\Ejercicios\\ejerciciosPOO2026-2\\Ejercicio1\\RobotsDeServicio\\View\\robots.h",
+              "Title": "robots.h [Design]",
+              "DocumentMoniker": "C:\\Users\\alexis-pc\\OneDrive\\Documentos\\Universidad\\Courses\\Programacion_orientada_a_objetos\\ejerciciosPOO2026-2\\Ejercicio1\\RobotsDeServicio\\View\\robots.h",
               "RelativeDocumentMoniker": "View\\robots.h",
-              "ToolTip": "C:\\Users\\alexis-pc\\OneDrive\\Documentos\\Universidad\\Courses\\Programacion_orientada_a_objetos\\2026-2\\Ejercicios\\ejerciciosPOO2026-2\\Ejercicio1\\RobotsDeServicio\\View\\robots.h",
+              "ToolTip": "C:\\Users\\alexis-pc\\OneDrive\\Documentos\\Universidad\\Courses\\Programacion_orientada_a_objetos\\ejerciciosPOO2026-2\\Ejercicio1\\RobotsDeServicio\\View\\robots.h [Design]",
+              "RelativeToolTip": "View\\robots.h [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2026-09-21T20:11:06.236Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Model.h",
+              "DocumentMoniker": "C:\\Users\\alexis-pc\\OneDrive\\Documentos\\Universidad\\Courses\\Programacion_orientada_a_objetos\\ejerciciosPOO2026-2\\Ejercicio1\\RobotsDeServicio\\Model\\Model.h",
+              "RelativeDocumentMoniker": "Model\\Model.h",
+              "ToolTip": "C:\\Users\\alexis-pc\\OneDrive\\Documentos\\Universidad\\Courses\\Programacion_orientada_a_objetos\\ejerciciosPOO2026-2\\Ejercicio1\\RobotsDeServicio\\Model\\Model.h",
+              "RelativeToolTip": "Model\\Model.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2026-09-21T20:15:11.915Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Controller.h",
+              "DocumentMoniker": "C:\\Users\\alexis-pc\\OneDrive\\Documentos\\Universidad\\Courses\\Programacion_orientada_a_objetos\\ejerciciosPOO2026-2\\Ejercicio1\\RobotsDeServicio\\Controller\\Controller.h",
+              "RelativeDocumentMoniker": "Controller\\Controller.h",
+              "ToolTip": "C:\\Users\\alexis-pc\\OneDrive\\Documentos\\Universidad\\Courses\\Programacion_orientada_a_objetos\\ejerciciosPOO2026-2\\Ejercicio1\\RobotsDeServicio\\Controller\\Controller.h",
+              "RelativeToolTip": "Controller\\Controller.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2026-09-21T20:11:26.987Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "robots.h",
+              "DocumentMoniker": "C:\\Users\\alexis-pc\\OneDrive\\Documentos\\Universidad\\Courses\\Programacion_orientada_a_objetos\\ejerciciosPOO2026-2\\Ejercicio1\\RobotsDeServicio\\View\\robots.h",
+              "RelativeDocumentMoniker": "View\\robots.h",
+              "ToolTip": "C:\\Users\\alexis-pc\\OneDrive\\Documentos\\Universidad\\Courses\\Programacion_orientada_a_objetos\\ejerciciosPOO2026-2\\Ejercicio1\\RobotsDeServicio\\View\\robots.h",
               "RelativeToolTip": "View\\robots.h",
-              "ViewState": "AgIAADwAAAAAAAAAAAAMwJcAAABxAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcBAABAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2026-09-21T19:36:02.108Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 5,
               "Title": "robots.cpp",
-              "DocumentMoniker": "C:\\Users\\alexis-pc\\OneDrive\\Documentos\\Universidad\\Courses\\Programacion_orientada_a_objetos\\2026-2\\Ejercicios\\ejerciciosPOO2026-2\\Ejercicio1\\RobotsDeServicio\\View\\robots.cpp",
+              "DocumentMoniker": "C:\\Users\\alexis-pc\\OneDrive\\Documentos\\Universidad\\Courses\\Programacion_orientada_a_objetos\\ejerciciosPOO2026-2\\Ejercicio1\\RobotsDeServicio\\View\\robots.cpp",
               "RelativeDocumentMoniker": "View\\robots.cpp",
-              "ToolTip": "C:\\Users\\alexis-pc\\OneDrive\\Documentos\\Universidad\\Courses\\Programacion_orientada_a_objetos\\2026-2\\Ejercicios\\ejerciciosPOO2026-2\\Ejercicio1\\RobotsDeServicio\\View\\robots.cpp",
+              "ToolTip": "C:\\Users\\alexis-pc\\OneDrive\\Documentos\\Universidad\\Courses\\Programacion_orientada_a_objetos\\ejerciciosPOO2026-2\\Ejercicio1\\RobotsDeServicio\\View\\robots.cpp",
               "RelativeToolTip": "View\\robots.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2026-09-21T19:33:08.273Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "robots.h [Design]",
-              "DocumentMoniker": "C:\\Users\\alexis-pc\\OneDrive\\Documentos\\Universidad\\Courses\\Programacion_orientada_a_objetos\\2026-2\\Ejercicios\\ejerciciosPOO2026-2\\Ejercicio1\\RobotsDeServicio\\View\\robots.h",
-              "RelativeDocumentMoniker": "View\\robots.h",
-              "ToolTip": "C:\\Users\\alexis-pc\\OneDrive\\Documentos\\Universidad\\Courses\\Programacion_orientada_a_objetos\\2026-2\\Ejercicios\\ejerciciosPOO2026-2\\Ejercicio1\\RobotsDeServicio\\View\\robots.h [Design]",
-              "RelativeToolTip": "View\\robots.h [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2026-09-21T19:32:19.351Z",
-              "EditorCaption": " [Design]"
             }
           ]
         }

@@ -1,0 +1,2 @@
+C:\Users\alexis-pc\OneDrive\Documentos\Universidad\Courses\Programacion_orientada_a_objetos\ejerciciosPOO2026-2\Ejercicio1\RobotsDeServicio\Controller\x64\Debug\Controller.vcxproj.AssemblyReference.cache
+C:\Users\alexis-pc\OneDrive\Documentos\Universidad\Courses\Programacion_orientada_a_objetos\ejerciciosPOO2026-2\Ejercicio1\RobotsDeServicio\Controller\x64\Debug\Controll.5D7F4D9A.Up2Date
