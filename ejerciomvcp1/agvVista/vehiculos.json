@@ -1,0 +1,1 @@
+[{"__type":"AGVTractorArrastre:#agvModel","Bateria":75,"Codigo":"AGV-001","id":1,"CantidadVagones":3},{"__type":"AGVTrasnpaleta:#agvModel","Bateria":85,"Codigo":"AGV-002","id":2,"AlturaMaximaHorquilla":1.5},{"__type":"AGVTrasnpaleta:#agvModel","Bateria":25,"Codigo":"PepitoBaja","id":3,"AlturaMaximaHorquilla":5}]

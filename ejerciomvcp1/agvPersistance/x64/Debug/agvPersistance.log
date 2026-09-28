@@ -1,0 +1,7 @@
+﻿  pch.cpp
+  AssemblyInfo.cpp
+  agvPersistance.cpp
+  Generating Code...
+  .NETFramework,Version=v4.7.2.AssemblyAttributes.cpp
+  agvPersistance.obj : MSIL module encountered; incremental linking is disabled for MSIL; performing full link
+  agvPersistance.vcxproj -> C:\Users\alexis-pc\OneDrive\Documentos\Universidad\Courses\Programacion_orientada_a_objetos\ejerciciosPOO2026-2\ejerciomvcp1\x64\Debug\agvPersistance.dll

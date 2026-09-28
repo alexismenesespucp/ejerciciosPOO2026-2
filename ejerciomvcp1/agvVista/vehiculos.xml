@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfVehiculoAgv xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <vehiculoAgv xsi:type="AGVTractorArrastre">
+    <Bateria>75</Bateria>
+    <Codigo>AGV-001</Codigo>
+    <id>1</id>
+    <CantidadVagones>3</CantidadVagones>
+  </vehiculoAgv>
+  <vehiculoAgv xsi:type="AGVTrasnpaleta">
+    <Bateria>85</Bateria>
+    <Codigo>AGV-002</Codigo>
+    <id>2</id>
+    <AlturaMaximaHorquilla>1.5</AlturaMaximaHorquilla>
+  </vehiculoAgv>
+  <vehiculoAgv xsi:type="AGVTrasnpaleta">
+    <Bateria>25</Bateria>
+    <Codigo>PepitoBaja</Codigo>
+    <id>3</id>
+    <AlturaMaximaHorquilla>5</AlturaMaximaHorquilla>
+  </vehiculoAgv>
+</ArrayOfVehiculoAgv>

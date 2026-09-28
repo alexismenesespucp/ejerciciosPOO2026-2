@@ -1,0 +1,10 @@
+<Solution>
+  <Configurations>
+    <Platform Name="x64" />
+    <Platform Name="x86" />
+  </Configurations>
+  <Project Path="agvController/agvController.vcxproj" />
+  <Project Path="agvModel/agvModel.vcxproj" />
+  <Project Path="agvPersistance/agvPersistance.vcxproj" />
+  <Project Path="agvVista/agvVista.vcxproj" />
+</Solution>

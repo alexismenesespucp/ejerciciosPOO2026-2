@@ -1,0 +1,51 @@
+ImageRuntimeVersion: v4.0.30319
+Assembly agvModel, Version=1.0.*, Culture=Invariant Language (Invariant Country): 
+	hash=SHA1, flags=PublicKey
+Assembly mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System.Xml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System.Runtime.Serialization, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Class agvModel.Class1: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+Class agvModel.EstacionCarga: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+Class agvModel.vehiculoAgv: AutoLayout, AnsiClass, Class, Public, Abstract, Serializable, BeforeFieldInit
+    Void .ctor(Int32, System.String, Double): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    Double Bateria 'get set' : 
+    System.String Codigo 'get set' : 
+    Int32 id   'get set' : 
+  Methods:
+    get_id(): PrivateScope, Public, HideBySig, SpecialName
+    set_id(Int32): PrivateScope, Public, HideBySig, SpecialName
+    get_Codigo(): PrivateScope, Public, HideBySig, SpecialName
+    set_Codigo(String): PrivateScope, Public, HideBySig, SpecialName
+    get_Bateria(): PrivateScope, Public, HideBySig, SpecialName
+    set_Bateria(Double): PrivateScope, Public, HideBySig, SpecialName
+    CalcularCapacidadCargaMaxima(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+Class agvModel.AGVTrasnpaleta: AutoLayout, AnsiClass, Class, Public, Serializable, BeforeFieldInit
+  :agvModel.vehiculoAgv
+    Void .ctor(Int32, System.String, Double, Double): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    Double AlturaMaximaHorquilla 'get set' : 
+  Methods:
+    get_AlturaMaximaHorquilla(): PrivateScope, Public, HideBySig, SpecialName
+    set_AlturaMaximaHorquilla(Double): PrivateScope, Public, HideBySig, SpecialName
+    CalcularCapacidadCargaMaxima(): PrivateScope, Public, Virtual, HideBySig
+Class agvModel.AGVTractorArrastre: AutoLayout, AnsiClass, Class, Public, Serializable, BeforeFieldInit
+  :agvModel.vehiculoAgv
+    Void .ctor(Int32, System.String, Double, Int32): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    Int32 CantidadVagones 'get set' : 
+  Methods:
+    get_CantidadVagones(): PrivateScope, Public, HideBySig, SpecialName
+    set_CantidadVagones(Int32): PrivateScope, Public, HideBySig, SpecialName
+    CalcularCapacidadCargaMaxima(): PrivateScope, Public, Virtual, HideBySig

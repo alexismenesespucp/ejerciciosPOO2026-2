@@ -1,0 +1,15 @@
+{
+    "version": 1,
+    "revision": 0,
+    "rules": [
+        {
+            "primary-output": "x64\\Debug\\agvModel.obj",
+            "outputs": [
+                "x64\\Debug\\agvModel.h.obj.dt.module.json",
+                "x64\\Debug\\agvModel.h.obj.dt.d.json",
+                "x64\\Debug\\agvModel.pch"
+            ],
+            "requires": []
+        }
+    ]
+}

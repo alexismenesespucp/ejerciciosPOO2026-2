@@ -1,0 +1,3 @@
+AGVTractorArrastre|1|AGV-001|75|3
+AGVTrasnpaleta|2|AGV-002|85|1.5
+AGVTrasnpaleta|3|PepitoBaja|25|5
