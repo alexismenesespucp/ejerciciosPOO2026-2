@@ -62,8 +62,7 @@
               "RelativeToolTip": "Controller\\Controller.cpp",
               "ViewState": "AgIAABwAAAAAAAAAAAAYwCsAAAADAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2026-09-21T20:31:28.075Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-09-21T20:31:28.075Z"
             },
             {
               "$type": "Document",
@@ -87,8 +86,7 @@
               "RelativeToolTip": "Model\\Model.h",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2026-09-21T20:15:11.915Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-09-21T20:15:11.915Z"
             },
             {
               "$type": "Document",
@@ -100,8 +98,7 @@
               "RelativeToolTip": "Controller\\Controller.h",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAACAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2026-09-21T20:11:26.987Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-09-21T20:11:26.987Z"
             },
             {
               "$type": "Document",
@@ -111,7 +108,7 @@
               "RelativeDocumentMoniker": "View\\robots.h",
               "ToolTip": "C:\\Users\\alexis-pc\\OneDrive\\Documentos\\Universidad\\Courses\\Programacion_orientada_a_objetos\\ejerciciosPOO2026-2\\Ejercicio1\\RobotsDeServicio\\View\\robots.h",
               "RelativeToolTip": "View\\robots.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcBAABAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAPAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2026-09-21T19:36:02.108Z",
               "EditorCaption": ""
@@ -126,8 +123,7 @@
               "RelativeToolTip": "View\\robots.cpp",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2026-09-21T19:33:08.273Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-09-21T19:33:08.273Z"
             }
           ]
         }
