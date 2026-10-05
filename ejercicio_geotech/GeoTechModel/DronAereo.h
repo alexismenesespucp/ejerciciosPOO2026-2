@@ -15,7 +15,7 @@ namespace GeoTechModel {
 		{
 			this->CantidadHelices = cantidadHelices;
 		}
-
+			
 		virtual double CalcularAutonomiaHoras() override
 		{
 			return (this->BateriaRestante / 100.0)* (3.5 - (this->CantidadHelices * 0.2));

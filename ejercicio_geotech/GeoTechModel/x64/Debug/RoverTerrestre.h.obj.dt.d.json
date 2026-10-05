@@ -1,0 +1,12 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "c:\\users\\alexis-pc\\onedrive\\documentos\\universidad\\courses\\programacion_orientada_a_objetos\\ejerciciospoo2026-2\\ejercicio_geotech\\geotechmodel\\roverterrestre.h",
+        "ProvidedModule": "",
+        "Includes": [
+            "c:\\users\\alexis-pc\\onedrive\\documentos\\universidad\\courses\\programacion_orientada_a_objetos\\ejerciciospoo2026-2\\ejercicio_geotech\\geotechmodel\\unidadinspeccion.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}
