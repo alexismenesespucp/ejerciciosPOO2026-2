@@ -1,0 +1,10 @@
+<Solution>
+  <Configurations>
+    <Platform Name="x64" />
+    <Platform Name="x86" />
+  </Configurations>
+  <Project Path="GeoTechController/GeoTechController.vcxproj" />
+  <Project Path="GeoTechGUIApp/GeoTechGUIApp.vcxproj" />
+  <Project Path="GeoTechModel/GeoTechModel.vcxproj" />
+  <Project Path="GeoTechPersistance/GeoTechPersistance.vcxproj" />
+</Solution>

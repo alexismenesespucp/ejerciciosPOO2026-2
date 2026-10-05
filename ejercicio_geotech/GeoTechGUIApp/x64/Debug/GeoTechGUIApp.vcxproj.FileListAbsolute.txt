@@ -1,0 +1,1 @@
+C:\Users\alexis-pc\OneDrive\Documentos\Universidad\Courses\Programacion_orientada_a_objetos\ejerciciosPOO2026-2\ejercicio_geotech\GeoTechGUIApp\x64\Debug\GeoTechGUIApp.vcxproj.AssemblyReference.cache
