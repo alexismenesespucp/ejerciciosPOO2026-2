@@ -3,11 +3,27 @@ Assembly GeoTechController, Version=1.0.*, Culture=Invariant Language (Invariant
 	hash=SHA1, flags=PublicKey
 Assembly mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
 	hash=None, flags=None
+Assembly GeoTechModel, Version=1.0.*, Culture=Invariant Language (Invariant Country): 
+	hash=None, flags=None
+Assembly GeoTechPersistance, Version=1.0.*, Culture=Invariant Language (Invariant Country): 
+	hash=None, flags=None
 Assembly System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
 	hash=None, flags=None
 Assembly System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
 	hash=None, flags=None
 Assembly System.Xml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
 	hash=None, flags=None
+Class GeoTechController.EstacionController: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    RegistrarEstacion(Int32, String, Int32): PrivateScope, Public, HideBySig
+    ConectarUnidadAEstacion(Int32): PrivateScope, Public, HideBySig
+    ObtenerEstaciones(): PrivateScope, Public, HideBySig
 Class GeoTechController.Class1: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
     Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+Class GeoTechController.UnidadController: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    RegistrarUnidad(UnidadInspeccion): PrivateScope, Public, HideBySig
+    ObtenerUnidades(): PrivateScope, Public, HideBySig
+    ObtenerUnidadMayorAutonomoia(Int32): PrivateScope, Public, HideBySig

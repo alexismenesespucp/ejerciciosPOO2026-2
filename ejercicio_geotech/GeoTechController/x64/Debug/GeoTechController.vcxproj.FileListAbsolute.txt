@@ -1,1 +1,2 @@
 C:\Users\alexis-pc\OneDrive\Documentos\Universidad\Courses\Programacion_orientada_a_objetos\ejerciciosPOO2026-2\ejercicio_geotech\GeoTechController\x64\Debug\GeoTechController.vcxproj.AssemblyReference.cache
+C:\Users\alexis-pc\OneDrive\Documentos\Universidad\Courses\Programacion_orientada_a_objetos\ejerciciosPOO2026-2\ejercicio_geotech\GeoTechController\x64\Debug\GeoTechC.704BC7BC.Up2Date

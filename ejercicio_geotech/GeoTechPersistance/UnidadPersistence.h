@@ -5,7 +5,7 @@ using namespace System::Collections::Generic;
 using namespace System::IO;
 using namespace GeoTechModel;
 
-namespace GeotechPersistance {
+namespace GeoTechPersistance {
 	public ref class UnidadPersistence abstract sealed
 	{
 	private:

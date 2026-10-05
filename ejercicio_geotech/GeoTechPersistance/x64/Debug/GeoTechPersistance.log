@@ -1,8 +1,5 @@
-﻿  pch.cpp
-  AssemblyInfo.cpp
-  GeoTechPersistance.cpp
+﻿  EstacionPersistence.cpp
   UnidadPersistence.cpp
   Generating Code...
-  .NETFramework,Version=v4.7.2.AssemblyAttributes.cpp
   AssemblyInfo.obj : MSIL module encountered; incremental linking is disabled for MSIL; performing full link
   GeoTechPersistance.vcxproj -> C:\Users\alexis-pc\OneDrive\Documentos\Universidad\Courses\Programacion_orientada_a_objetos\ejerciciosPOO2026-2\ejercicio_geotech\x64\Debug\GeoTechPersistance.dll
