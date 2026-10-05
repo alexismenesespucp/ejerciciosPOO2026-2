@@ -30,6 +30,12 @@
     <ClInclude Include="DronAereo.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="RoverTerrestre.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="EstacionEnlace.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="GeoTechModel.cpp">
@@ -39,6 +45,18 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="pch.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UnidadInspeccion.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="RoverTerrestre.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DronAereo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="EstacionEnlace.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

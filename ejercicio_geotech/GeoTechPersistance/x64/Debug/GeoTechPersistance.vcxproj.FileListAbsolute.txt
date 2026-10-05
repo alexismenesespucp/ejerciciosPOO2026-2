@@ -1,0 +1,2 @@
+C:\Users\alexis-pc\OneDrive\Documentos\Universidad\Courses\Programacion_orientada_a_objetos\ejerciciosPOO2026-2\ejercicio_geotech\GeoTechPersistance\x64\Debug\GeoTechPersistance.vcxproj.AssemblyReference.cache
+C:\Users\alexis-pc\OneDrive\Documentos\Universidad\Courses\Programacion_orientada_a_objetos\ejerciciosPOO2026-2\ejercicio_geotech\GeoTechPersistance\x64\Debug\GeoTechP.18B7C400.Up2Date

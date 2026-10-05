@@ -1,0 +1,66 @@
+ImageRuntimeVersion: v4.0.30319
+Assembly GeoTechModel, Version=1.0.*, Culture=Invariant Language (Invariant Country): 
+	hash=SHA1, flags=PublicKey
+Assembly mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System.Xml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Class GeoTechModel.UnidadInspeccion: AutoLayout, AnsiClass, Class, Public, Abstract, BeforeFieldInit
+    Void .ctor(Int32, System.String, Double): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    Double BateriaRestante 'get set' : 
+    System.String CodigoSerie 'get set' : 
+    Int32 Id   'get set' : 
+  Methods:
+    get_Id(): PrivateScope, Public, HideBySig, SpecialName
+    set_Id(Int32): PrivateScope, Public, HideBySig, SpecialName
+    get_CodigoSerie(): PrivateScope, Public, HideBySig, SpecialName
+    set_CodigoSerie(String): PrivateScope, Public, HideBySig, SpecialName
+    get_BateriaRestante(): PrivateScope, Public, HideBySig, SpecialName
+    set_BateriaRestante(Double): PrivateScope, Public, HideBySig, SpecialName
+    CalcularAutonomiaHoras(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+Class GeoTechModel.DronAereo: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :GeoTechModel.UnidadInspeccion
+    Void .ctor(Int32, System.String, Double, Int32): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    Int32 CantidadHelices 'get set' : 
+  Methods:
+    get_CantidadHelices(): PrivateScope, Public, HideBySig, SpecialName
+    set_CantidadHelices(Int32): PrivateScope, Public, HideBySig, SpecialName
+    CalcularAutonomiaHoras(): PrivateScope, Public, Virtual, HideBySig
+Class GeoTechModel.EstacionEnlace: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(Int32, System.String, Int32): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    Int32 UnidadesConectadas 'get set' : 
+    Int32 CapacidadUnidades 'get set' : 
+    System.String NombreUbicacion 'get set' : 
+    Int32 NumeroEstacion 'get set' : 
+  Methods:
+    get_NumeroEstacion(): PrivateScope, Public, HideBySig, SpecialName
+    set_NumeroEstacion(Int32): PrivateScope, Public, HideBySig, SpecialName
+    get_NombreUbicacion(): PrivateScope, Public, HideBySig, SpecialName
+    set_NombreUbicacion(String): PrivateScope, Public, HideBySig, SpecialName
+    get_CapacidadUnidades(): PrivateScope, Public, HideBySig, SpecialName
+    set_CapacidadUnidades(Int32): PrivateScope, Public, HideBySig, SpecialName
+    get_UnidadesConectadas(): PrivateScope, Public, HideBySig, SpecialName
+    set_UnidadesConectadas(Int32): PrivateScope, Public, HideBySig, SpecialName
+    TieneEspacioDisponible(): PrivateScope, Public, HideBySig
+Class GeoTechModel.Class1: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+Class GeoTechModel.RoverTerrestre: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :GeoTechModel.UnidadInspeccion
+    Void .ctor(Int32, System.String, Double, Double): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    Double PesoCargaUtilKg 'get set' : 
+  Methods:
+    get_PesoCargaUtilKg(): PrivateScope, Public, HideBySig, SpecialName
+    set_PesoCargaUtilKg(Double): PrivateScope, Public, HideBySig, SpecialName
+    CalcularAutonomiaHoras(): PrivateScope, Public, Virtual, HideBySig

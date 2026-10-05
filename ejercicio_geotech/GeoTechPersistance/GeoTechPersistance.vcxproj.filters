@@ -24,6 +24,12 @@
     <ClInclude Include="pch.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="UnidadPersistence.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="EstacionPersistence.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="GeoTechPersistance.cpp">
@@ -33,6 +39,12 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="pch.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UnidadPersistence.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="EstacionPersistence.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
