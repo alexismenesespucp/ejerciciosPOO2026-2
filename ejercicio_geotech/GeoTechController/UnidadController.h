@@ -8,13 +8,13 @@ namespace GeoTechController {
 	public ref class UnidadController
 	{
 	private:
-		List<UnidadInspeccion^>^ unidades;
+		static List<UnidadInspeccion^>^ unidades;
 	public:
-		UnidadController() {
-			this->unidades = UnidadPersistence::CargarDesdeCSV();
+		static UnidadController() {
+			unidades = UnidadPersistence::CargarDesdeCSV();
 		}
-		void RegistrarUnidad(UnidadInspeccion^ unidad);
-		List<UnidadInspeccion^>^ ObtenerUnidades();
-		UnidadInspeccion^ ObtenerUnidadMayorAutonomoia(int id);
+		static void RegistrarUnidad(UnidadInspeccion^ unidad);
+		static List<UnidadInspeccion^>^ ObtenerUnidades();
+		static UnidadInspeccion^ ObtenerUnidadMayorAutonomia();
 	};
 }

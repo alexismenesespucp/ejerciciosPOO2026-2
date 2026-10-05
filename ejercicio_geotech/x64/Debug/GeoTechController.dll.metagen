@@ -24,6 +24,6 @@ Class GeoTechController.Class1: AutoLayout, AnsiClass, Class, Public, BeforeFiel
 Class GeoTechController.UnidadController: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
     Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
   Methods:
-    RegistrarUnidad(UnidadInspeccion): PrivateScope, Public, HideBySig
-    ObtenerUnidades(): PrivateScope, Public, HideBySig
-    ObtenerUnidadMayorAutonomoia(Int32): PrivateScope, Public, HideBySig
+    RegistrarUnidad(UnidadInspeccion): PrivateScope, Public, Static, HideBySig
+    ObtenerUnidades(): PrivateScope, Public, Static, HideBySig
+    ObtenerUnidadMayorAutonomia(): PrivateScope, Public, Static, HideBySig

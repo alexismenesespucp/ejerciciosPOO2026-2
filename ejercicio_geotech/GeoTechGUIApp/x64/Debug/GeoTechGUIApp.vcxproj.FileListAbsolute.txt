@@ -1,1 +1,4 @@
 C:\Users\alexis-pc\OneDrive\Documentos\Universidad\Courses\Programacion_orientada_a_objetos\ejerciciosPOO2026-2\ejercicio_geotech\GeoTechGUIApp\x64\Debug\GeoTechGUIApp.vcxproj.AssemblyReference.cache
+C:\Users\alexis-pc\OneDrive\Documentos\Universidad\Courses\Programacion_orientada_a_objetos\ejerciciosPOO2026-2\ejercicio_geotech\GeoTechGUIApp\x64\Debug\GeoTechGUIApp.UnidadManagementForm.resources
+C:\Users\alexis-pc\OneDrive\Documentos\Universidad\Courses\Programacion_orientada_a_objetos\ejerciciosPOO2026-2\ejercicio_geotech\GeoTechGUIApp\x64\Debug\GeoTechGUIApp.vcxproj.GenerateResource.cache
+C:\Users\alexis-pc\OneDrive\Documentos\Universidad\Courses\Programacion_orientada_a_objetos\ejerciciosPOO2026-2\ejercicio_geotech\GeoTechGUIApp\x64\Debug\GeoTechG.7A73A208.Up2Date

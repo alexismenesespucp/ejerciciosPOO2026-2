@@ -139,6 +139,19 @@
       <FileType>CppForm</FileType>
     </ClInclude>
   </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="UnidadManagementForm.resx">
+      <DependentUpon>UnidadManagementForm.h</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\GeoTechController\GeoTechController.vcxproj">
+      <Project>{3550df8c-2c84-001e-5565-17fbe92cd21a}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\GeoTechModel\GeoTechModel.vcxproj">
+      <Project>{aae18f79-1b8f-78cd-4d32-a25e73f7db2e}</Project>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>

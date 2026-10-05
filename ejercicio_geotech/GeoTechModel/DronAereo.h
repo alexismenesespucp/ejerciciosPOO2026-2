@@ -13,7 +13,8 @@ namespace GeoTechModel {
 		DronAereo(int id, String^ codigoSerie, double bateriaRestante, int cantidadHelices)
 			: UnidadInspeccion(id, codigoSerie, bateriaRestante)
 		{
-			this->CantidadHelices = cantidadHelices;
+			Console::WriteLine("Creando DronAereo con ID: {0}, CodigoSerie: {1}, BateriaRestante: {2}, CantidadHelices: {3}", id, codigoSerie, bateriaRestante, cantidadHelices);	
+			this->CantidadHelices = cantidadHelices;	
 		}
 			
 		virtual double CalcularAutonomiaHoras() override
