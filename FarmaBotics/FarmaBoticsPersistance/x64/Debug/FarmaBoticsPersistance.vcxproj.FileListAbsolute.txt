@@ -1,0 +1,2 @@
+C:\Users\alexis-pc\OneDrive\Documentos\Universidad\Courses\Programacion_orientada_a_objetos\ejerciciosPOO2026-2\FarmaBotics\FarmaBoticsPersistance\x64\Debug\FarmaBoticsPersistance.vcxproj.AssemblyReference.cache
+C:\Users\alexis-pc\OneDrive\Documentos\Universidad\Courses\Programacion_orientada_a_objetos\ejerciciosPOO2026-2\FarmaBotics\FarmaBoticsPersistance\x64\Debug\FarmaBot.E0714659.Up2Date

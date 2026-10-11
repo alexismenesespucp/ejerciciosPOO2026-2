@@ -1,0 +1,60 @@
+ImageRuntimeVersion: v4.0.30319
+Assembly FarmaBoticsModel, Version=1.0.*, Culture=Invariant Language (Invariant Country): 
+	hash=SHA1, flags=PublicKey
+Assembly mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System.Xml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Class FarmaBoticsModel.Class1: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+Class FarmaBoticsModel.RobotMovil: AutoLayout, AnsiClass, Class, Public, Abstract, BeforeFieldInit
+    Void .ctor(Int32, System.String, System.String, Double, Double): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    Double HorasOperacion 'get set' : 
+    Double NivelBateria 'get set' : 
+    System.String ZonaAsignada 'get set' : 
+    System.String Alias 'get set' : 
+    Int32 SerialId 'get set' : 
+  Methods:
+    get_SerialId(): PrivateScope, Public, HideBySig, SpecialName
+    set_SerialId(Int32): PrivateScope, Public, HideBySig, SpecialName
+    get_Alias(): PrivateScope, Public, HideBySig, SpecialName
+    set_Alias(String): PrivateScope, Public, HideBySig, SpecialName
+    get_ZonaAsignada(): PrivateScope, Public, HideBySig, SpecialName
+    set_ZonaAsignada(String): PrivateScope, Public, HideBySig, SpecialName
+    get_NivelBateria(): PrivateScope, Public, HideBySig, SpecialName
+    set_NivelBateria(Double): PrivateScope, Public, HideBySig, SpecialName
+    get_HorasOperacion(): PrivateScope, Public, HideBySig, SpecialName
+    set_HorasOperacion(Double): PrivateScope, Public, HideBySig, SpecialName
+    CalcularConsumoEnergeticoKWh(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+Class FarmaBoticsModel.RobotDispensador: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :FarmaBoticsModel.RobotMovil
+    Void .ctor(Int32, System.String, System.String, Double, Double, Int32, Int32): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    Double CargaActualKg 'get set' : 
+    Int32 CapacidadBandejas 'get set' : 
+  Methods:
+    get_CapacidadBandejas(): PrivateScope, Public, HideBySig, SpecialName
+    set_CapacidadBandejas(Int32): PrivateScope, Public, HideBySig, SpecialName
+    get_CargaActualKg(): PrivateScope, Public, HideBySig, SpecialName
+    set_CargaActualKg(Double): PrivateScope, Public, HideBySig, SpecialName
+    CalcularConsumoEnergeticoKWh(): PrivateScope, Public, Virtual, HideBySig
+Class FarmaBoticsModel.RobotSanitizador: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :FarmaBoticsModel.RobotMovil
+    Void .ctor(Int32, System.String, System.String, Double, Double, Double, Double): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    Double VolumenDesinfectanteLitros 'get set' : 
+    Double PotenciaLamparaWatts 'get set' : 
+  Methods:
+    get_PotenciaLamparaWatts(): PrivateScope, Public, HideBySig, SpecialName
+    set_PotenciaLamparaWatts(Double): PrivateScope, Public, HideBySig, SpecialName
+    get_VolumenDesinfectanteLitros(): PrivateScope, Public, HideBySig, SpecialName
+    set_VolumenDesinfectanteLitros(Double): PrivateScope, Public, HideBySig, SpecialName
+    CalcularConsumoEnergeticoKWh(): PrivateScope, Public, Virtual, HideBySig

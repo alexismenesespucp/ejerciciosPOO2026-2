@@ -1,0 +1,10 @@
+﻿  pch.cpp
+  AssemblyInfo.cpp
+  FarmaBoticsPersistance.cpp
+  Generating Code...
+C:\Users\alexis-pc\OneDrive\Documentos\Universidad\Courses\Programacion_orientada_a_objetos\ejerciciosPOO2026-2\FarmaBotics\FarmaBoticsPersistance\FarmaBoticsPersistance.cpp(47,140): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+  (compiling source file '/FarmaBoticsPersistance.cpp')
+  
+  .NETFramework,Version=v4.7.2.AssemblyAttributes.cpp
+  AssemblyInfo.obj : MSIL module encountered; incremental linking is disabled for MSIL; performing full link
+  FarmaBoticsPersistance.vcxproj -> C:\Users\alexis-pc\OneDrive\Documentos\Universidad\Courses\Programacion_orientada_a_objetos\ejerciciosPOO2026-2\FarmaBotics\x64\Debug\FarmaBoticsPersistance.dll
