@@ -22,6 +22,7 @@ Class SimuladorModel.Laberinto: AutoLayout, AnsiClass, Class, Public, BeforeFiel
     get_Columnas(): PrivateScope, Public, HideBySig, SpecialName
     get_TamanoCelda(): PrivateScope, Public, HideBySig, SpecialName
     InicializarMapaParametrico(): PrivateScope, Public, HideBySig
+    GenerarLaberintoAleatorio(): PrivateScope, Public, HideBySig
     EsPasoValido(Int32, Int32): PrivateScope, Public, HideBySig
     Dibujar(Graphics): PrivateScope, Public, HideBySig
 Class SimuladorModel.Class1: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
