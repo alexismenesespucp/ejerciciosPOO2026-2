@@ -1,0 +1,2 @@
+C:\Users\alexis-pc\OneDrive\Documentos\Universidad\Courses\Programacion_orientada_a_objetos\ejerciciosPOO2026-2\Simulador\SimuladorController\x64\Debug\SimuladorController.vcxproj.AssemblyReference.cache
+C:\Users\alexis-pc\OneDrive\Documentos\Universidad\Courses\Programacion_orientada_a_objetos\ejerciciosPOO2026-2\Simulador\SimuladorController\x64\Debug\Simulado.AA43A017.Up2Date

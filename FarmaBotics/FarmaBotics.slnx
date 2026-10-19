@@ -3,6 +3,7 @@
     <Platform Name="x64" />
     <Platform Name="x86" />
   </Configurations>
+  <Project Path="FarmaBoticsController/FarmaBoticsController.vcxproj" />
   <Project Path="FarmaBoticsGUIApp/FarmaBoticsGUIApp.vcxproj" />
   <Project Path="FarmaBoticsModel/FarmaBoticsModel.vcxproj" />
   <Project Path="FarmaBoticsPersistance/FarmaBoticsPersistance.vcxproj" />

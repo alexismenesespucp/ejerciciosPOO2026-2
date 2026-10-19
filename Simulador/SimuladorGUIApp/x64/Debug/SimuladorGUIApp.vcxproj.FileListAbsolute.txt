@@ -1,0 +1,4 @@
+C:\Users\alexis-pc\OneDrive\Documentos\Universidad\Courses\Programacion_orientada_a_objetos\ejerciciosPOO2026-2\Simulador\SimuladorGUIApp\x64\Debug\SimuladorGUIApp.vcxproj.AssemblyReference.cache
+C:\Users\alexis-pc\OneDrive\Documentos\Universidad\Courses\Programacion_orientada_a_objetos\ejerciciosPOO2026-2\Simulador\SimuladorGUIApp\x64\Debug\SimuladorGUIApp.FormLaberinto.resources
+C:\Users\alexis-pc\OneDrive\Documentos\Universidad\Courses\Programacion_orientada_a_objetos\ejerciciosPOO2026-2\Simulador\SimuladorGUIApp\x64\Debug\SimuladorGUIApp.vcxproj.GenerateResource.cache
+C:\Users\alexis-pc\OneDrive\Documentos\Universidad\Courses\Programacion_orientada_a_objetos\ejerciciosPOO2026-2\Simulador\SimuladorGUIApp\x64\Debug\Simulado.745951D8.Up2Date

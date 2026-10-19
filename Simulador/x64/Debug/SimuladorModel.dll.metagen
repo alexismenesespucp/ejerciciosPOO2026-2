@@ -1,0 +1,28 @@
+ImageRuntimeVersion: v4.0.30319
+Assembly SimuladorModel, Version=1.0.*, Culture=Invariant Language (Invariant Country): 
+	hash=SHA1, flags=PublicKey
+Assembly mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a: 
+	hash=None, flags=None
+Assembly System.Xml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Class SimuladorModel.Laberinto: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(Int32, Int32, Int32): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    Int32 TamanoCelda 'get ' : 
+    Int32 Columnas 'get ' : 
+    Int32 Filas 'get ' : 
+  Methods:
+    get_Filas(): PrivateScope, Public, HideBySig, SpecialName
+    get_Columnas(): PrivateScope, Public, HideBySig, SpecialName
+    get_TamanoCelda(): PrivateScope, Public, HideBySig, SpecialName
+    InicializarMapaParametrico(): PrivateScope, Public, HideBySig
+    EsPasoValido(Int32, Int32): PrivateScope, Public, HideBySig
+    Dibujar(Graphics): PrivateScope, Public, HideBySig
+Class SimuladorModel.Class1: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName

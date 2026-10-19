@@ -134,6 +134,7 @@
     <ClInclude Include="FarmaBoticsController.h" />
     <ClInclude Include="pch.h" />
     <ClInclude Include="Resource.h" />
+    <ClInclude Include="RobotsController.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="AssemblyInfo.cpp" />
@@ -144,6 +145,7 @@
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
     </ClCompile>
+    <ClCompile Include="RobotsController.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="app.rc" />
@@ -155,6 +157,14 @@
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\FarmaBoticsModel\FarmaBoticsModel.vcxproj">
+      <Project>{f95f8630-1a0c-5202-71d3-18a12d9b7f1e}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\FarmaBoticsPersistance\FarmaBoticsPersistance.vcxproj">
+      <Project>{10c6a63e-0e51-798c-eb24-6a33d9771836}</Project>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
