@@ -12,7 +12,7 @@ namespace SimuladorModel {
 		int columnas;
 		int tamanoCelda;
 		array<int, 2>^ mapa;
-		
+
 		Point puntoInicio;
 		Point puntoLlegada;
 
@@ -26,7 +26,8 @@ namespace SimuladorModel {
 			this->rng = gcnew Random();
 			this->mapa = gcnew array<int, 2>(filas, columnas);
 			//InicializarMapaParametrico();
-			GenerarLaberintoAleatorio();
+			//GenerarLaberintoAleatorio();
+			GenerarLaberintoConMultiplesCaminos(65);
 		}
 
 		property int Filas { int get() { return filas; } };
@@ -83,6 +84,71 @@ namespace SimuladorModel {
 			this->puntoLlegada = Point(fFin, cFin);
 
 
+		}
+
+		void GenerarLaberintoConMultiplesCaminos(double porcentajeLibre){
+			for (int i = 0; i < this->filas; i++) {
+				for (int j = 0; j < this->columnas; j++) {
+						this->mapa[i, j] = 1;
+					}
+			}
+
+			int celdasInteriores = (this->filas - 2) * (this->columnas - 2);
+			int celdasObjetivo = (int)(celdasInteriores * porcentajeLibre/100);
+			int celdasExcavadas = 0;
+
+			int fMinero = rng->Next(1, this->filas - 1);
+			int cMinero = rng->Next(1, this->columnas - 1);
+
+			this->mapa[fMinero, cMinero] = 0;
+
+			celdasExcavadas = 1;
+
+			array<int>^ df = { -1,1,0,0 };
+			array<int>^ dc = { 0,0,-1,1 };
+			while (celdasExcavadas < celdasObjetivo) {
+				int dir = rng->Next(4);
+				int longitudTunel = rng->Next(2, 5);
+				for (int paso = 0; paso < longitudTunel; paso++) {
+					int nf = fMinero + df[dir];
+					int nc = cMinero + dc[dir];
+					if (nf >= 1 && nf < this->filas - 1 && nc >= 1 && nc < this->columnas - 1) {
+						fMinero = nf;
+						cMinero = nc;
+						if (this->mapa[fMinero, cMinero] == 1) {
+							this->mapa[fMinero, cMinero] = 0;
+							celdasExcavadas++;
+						}
+					}
+					else {
+						break;
+					}
+
+				}
+
+			}	
+			List<Point>^ celdasLibres = gcnew List<Point>();
+			for (int i = 1; i < this->filas - 1; i++) {
+				for (int j = 1; j < this->columnas - 1; j++) {
+					if (this->mapa[i, j] == 0) {
+						celdasLibres->Add(Point(i, j));
+					}
+				}
+			}
+
+			int indiceInicio = rng->Next(celdasLibres->Count);
+			this->puntoInicio = celdasLibres[indiceInicio];
+
+			int indiceFin;
+			double distanciaManhatan = 0;
+			double distanciaMaxima = this->Columnas * 3 / 8 + this->filas * 3 / 8;
+			do {
+				indiceFin = rng->Next(celdasLibres->Count);
+				distanciaManhatan = Math::Abs(celdasLibres[indiceFin].X - celdasLibres[indiceInicio].X) + Math::Abs(celdasLibres[indiceFin].Y - celdasLibres[indiceInicio].Y);
+				Console::WriteLine("Distancia entre puntos: {0} {1}", distanciaManhatan, distanciaMaxima);
+			} while (distanciaManhatan < distanciaMaxima); // Asegurar que la distancia sea suficientemente grande
+
+			this->puntoLlegada = celdasLibres[indiceFin];
 		}
 
 		bool EsPasoValido(int fila, int columna) {
