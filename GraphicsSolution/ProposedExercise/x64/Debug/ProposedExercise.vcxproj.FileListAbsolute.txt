@@ -1,0 +1,3 @@
+C:\Users\alexis-pc\OneDrive\Documentos\Universidad\Courses\Programacion_orientada_a_objetos\1INF53-GraphicsSolution\GraphicsSolution\ProposedExercise\x64\Debug\ProposedExercise.vcxproj.AssemblyReference.cache
+C:\Users\alexis-pc\OneDrive\Documentos\Universidad\Courses\Programacion_orientada_a_objetos\1INF53-GraphicsSolution\GraphicsSolution\ProposedExercise\x64\Debug\ProposedExercise.Form1.resources
+C:\Users\alexis-pc\OneDrive\Documentos\Universidad\Courses\Programacion_orientada_a_objetos\1INF53-GraphicsSolution\GraphicsSolution\ProposedExercise\x64\Debug\ProposedExercise.vcxproj.GenerateResource.cache

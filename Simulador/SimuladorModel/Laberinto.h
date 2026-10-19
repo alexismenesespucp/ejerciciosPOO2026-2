@@ -34,6 +34,9 @@ namespace SimuladorModel {
 		property int Columnas { int get() { return columnas; } };
 		property int TamanoCelda { int get() { return tamanoCelda; } };
 
+		property Point PuntoInicio { Point get() { return puntoInicio; } };
+		property Point PuntoLlegada { Point get() { return puntoLlegada; } };
+
 		void InicializarMapaParametrico() {
 			for (int i = 0; i < this->filas; i++) {
 				for (int j = 0; j < this->columnas; j++) {
@@ -150,6 +153,10 @@ namespace SimuladorModel {
 
 			this->puntoLlegada = celdasLibres[indiceFin];
 		}
+
+		bool EsCeldaLibre(Point punto) {
+			return EsPasoValido(punto.X, punto.Y);
+		};
 
 		bool EsPasoValido(int fila, int columna) {
 			if (fila < 0 || fila >= filas || columna < 0 || columna >= columnas) {

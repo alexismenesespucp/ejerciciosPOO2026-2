@@ -1,0 +1,3 @@
+C:\Users\alexis-pc\OneDrive\Documentos\Universidad\Courses\Programacion_orientada_a_objetos\1INF53-GraphicsSolution\GraphicsSolution\SinusoidalSignal\x64\Debug\SinusoidalSignal.vcxproj.AssemblyReference.cache
+C:\Users\alexis-pc\OneDrive\Documentos\Universidad\Courses\Programacion_orientada_a_objetos\1INF53-GraphicsSolution\GraphicsSolution\SinusoidalSignal\x64\Debug\SinusoidalSignal.Form1.resources
+C:\Users\alexis-pc\OneDrive\Documentos\Universidad\Courses\Programacion_orientada_a_objetos\1INF53-GraphicsSolution\GraphicsSolution\SinusoidalSignal\x64\Debug\SinusoidalSignal.vcxproj.GenerateResource.cache

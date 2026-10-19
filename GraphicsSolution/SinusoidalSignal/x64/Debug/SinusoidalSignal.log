@@ -1,0 +1,12 @@
+﻿  Form1.cpp
+C:\Users\alexis-pc\OneDrive\Documentos\Universidad\Courses\Programacion_orientada_a_objetos\1INF53-GraphicsSolution\GraphicsSolution\SinusoidalSignal\Form1.h(71,19): warning C4305: 'initializing': truncation from 'double' to 'float'
+  (compiling source file 'Form1.cpp')
+  
+C:\Users\alexis-pc\OneDrive\Documentos\Universidad\Courses\Programacion_orientada_a_objetos\1INF53-GraphicsSolution\GraphicsSolution\SinusoidalSignal\Form1.h(77,12): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+  (compiling source file 'Form1.cpp')
+  
+C:\Users\alexis-pc\OneDrive\Documentos\Universidad\Courses\Programacion_orientada_a_objetos\1INF53-GraphicsSolution\GraphicsSolution\SinusoidalSignal\Form1.h(78,23): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+  (compiling source file 'Form1.cpp')
+  
+  Form1.obj : MSIL module encountered; incremental linking is disabled for MSIL; performing full link
+  SinusoidalSignal.vcxproj -> C:\Users\alexis-pc\OneDrive\Documentos\Universidad\Courses\Programacion_orientada_a_objetos\1INF53-GraphicsSolution\GraphicsSolution\x64\Debug\SinusoidalSignal.exe

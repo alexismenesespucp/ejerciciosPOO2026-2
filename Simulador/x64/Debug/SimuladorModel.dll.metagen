@@ -14,6 +14,8 @@ Assembly System.Xml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c5619
 Class SimuladorModel.Laberinto: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
     Void .ctor(Int32, Int32, Int32): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
   Properties:
+    System.Drawing.Point PuntoLlegada 'get ' : 
+    System.Drawing.Point PuntoInicio 'get ' : 
     Int32 TamanoCelda 'get ' : 
     Int32 Columnas 'get ' : 
     Int32 Filas 'get ' : 
@@ -21,10 +23,25 @@ Class SimuladorModel.Laberinto: AutoLayout, AnsiClass, Class, Public, BeforeFiel
     get_Filas(): PrivateScope, Public, HideBySig, SpecialName
     get_Columnas(): PrivateScope, Public, HideBySig, SpecialName
     get_TamanoCelda(): PrivateScope, Public, HideBySig, SpecialName
+    get_PuntoInicio(): PrivateScope, Public, HideBySig, SpecialName
+    get_PuntoLlegada(): PrivateScope, Public, HideBySig, SpecialName
     InicializarMapaParametrico(): PrivateScope, Public, HideBySig
     GenerarLaberintoAleatorio(): PrivateScope, Public, HideBySig
     GenerarLaberintoConMultiplesCaminos(Double): PrivateScope, Public, HideBySig
+    EsCeldaLibre(Point): PrivateScope, Public, HideBySig
     EsPasoValido(Int32, Int32): PrivateScope, Public, HideBySig
     Dibujar(Graphics): PrivateScope, Public, HideBySig
+Class SimuladorModel.RobotExplorador: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(System.Drawing.Point, System.String): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    System.String Alias 'get set' : 
+    System.Drawing.Point posicion 'get set' : 
+  Methods:
+    get_posicion(): PrivateScope, Public, HideBySig, SpecialName
+    set_posicion(Point): PrivateScope, Public, HideBySig, SpecialName
+    get_Alias(): PrivateScope, Public, HideBySig, SpecialName
+    set_Alias(String): PrivateScope, Public, HideBySig, SpecialName
+    mover(Point): PrivateScope, Public, HideBySig
+    Dibujar(Graphics, Int32): PrivateScope, Public, HideBySig
 Class SimuladorModel.Class1: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
     Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName

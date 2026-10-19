@@ -36,13 +36,15 @@ namespace SimuladorGUIApp {
 			}
 		}
 	private: System::Windows::Forms::PictureBox^ pictureBox1;
+	private: System::Windows::Forms::Timer^ timer1;
+	private: System::ComponentModel::IContainer^ components;
 	protected:
 
 	private:
 		/// <summary>
 		/// Required designer variable.
 		/// </summary>
-		System::ComponentModel::Container ^components;
+
 
 #pragma region Windows Form Designer generated code
 		/// <summary>
@@ -51,7 +53,9 @@ namespace SimuladorGUIApp {
 		/// </summary>
 		void InitializeComponent(void)
 		{
+			this->components = (gcnew System::ComponentModel::Container());
 			this->pictureBox1 = (gcnew System::Windows::Forms::PictureBox());
+			this->timer1 = (gcnew System::Windows::Forms::Timer(this->components));
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox1))->BeginInit();
 			this->SuspendLayout();
 			// 
@@ -64,6 +68,12 @@ namespace SimuladorGUIApp {
 			this->pictureBox1->TabStop = false;
 			this->pictureBox1->Click += gcnew System::EventHandler(this, &FormLaberinto::s);
 			this->pictureBox1->Paint += gcnew System::Windows::Forms::PaintEventHandler(this, &FormLaberinto::laberinto_Paint);
+			// 
+			// timer1
+			// 
+			this->timer1->Enabled = true;
+			this->timer1->Interval = 500;
+			this->timer1->Tick += gcnew System::EventHandler(this, &FormLaberinto::timer1_Tick);
 			// 
 			// FormLaberinto
 			// 
@@ -82,6 +92,11 @@ namespace SimuladorGUIApp {
 		SimuladorLaberintoController::Renderizar(e->Graphics);
 	}
 	private: System::Void s(System::Object^ sender, System::EventArgs^ e) {
+	}
+	private: System::Void timer1_Tick(System::Object^ sender, System::EventArgs^ e) {
+		SimuladorLaberintoController::actualizarRobot();
+		this->pictureBox1->Invalidate(); // Forzar la actualización del PictureBox
+
 	}
 	};
 }
