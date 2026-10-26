@@ -13,13 +13,15 @@ Assembly System.Xml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c5619
 	hash=None, flags=None
 Class GeoTechPersistance.EstacionPersistence: AutoLayout, AnsiClass, Class, Public, Abstract, Sealed, BeforeFieldInit
   Methods:
-    GuardarEstacionesEnBD(List`1): PrivateScope, Public, Static, HideBySig
-    CargarEstacionesDesdeBD(): PrivateScope, Public, Static, HideBySig
     GuardarEstaciones(List`1): PrivateScope, Public, Static, HideBySig
     CargarEstaciones(): PrivateScope, Public, Static, HideBySig
 Class GeoTechPersistance.Class1: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
     Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
 Class GeoTechPersistance.UnidadPersistence: AutoLayout, AnsiClass, Class, Public, Abstract, Sealed, BeforeFieldInit
   Methods:
+    GuardarEstacionEnBD(UnidadInspeccion): PrivateScope, Public, Static, HideBySig
+    ModificarEstacionEnBD(UnidadInspeccion): PrivateScope, Public, Static, HideBySig
+    EliminarEstacionEnBD(Int32): PrivateScope, Public, Static, HideBySig
+    CargarEstacionesDesdeBD(): PrivateScope, Public, Static, HideBySig
     GuardarEnCSV(List`1): PrivateScope, Public, Static, HideBySig
     CargarDesdeCSV(): PrivateScope, Public, Static, HideBySig

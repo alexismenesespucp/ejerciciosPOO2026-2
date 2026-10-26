@@ -12,10 +12,13 @@ namespace GeoTechController {
 	public:
 		static UnidadController() {
 			Console::WriteLine("Cargando estaciones y unidades desde la base de datos y CSV...");
-			EstacionPersistence::CargarEstacionesDesdeBD();
+			unidades = UnidadPersistence::CargarEstacionesDesdeBD();
+			Console::WriteLine("Las unidades son: {0}", unidades->Count);
 			//unidades = UnidadPersistence::CargarDesdeCSV();
 		}
 		static void RegistrarUnidad(UnidadInspeccion^ unidad);
+		static void ModificarUnidad(UnidadInspeccion^ unidad);
+		static void EliminarUnidad(int idUnidad);
 		static List<UnidadInspeccion^>^ ObtenerUnidades();
 		static UnidadInspeccion^ ObtenerUnidadMayorAutonomia();
 	};

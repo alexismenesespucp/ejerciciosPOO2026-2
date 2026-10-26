@@ -13,10 +13,6 @@ Assembly System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e0
 	hash=None, flags=None
 Assembly System.Xml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
 	hash=None, flags=None
-Assembly GeoTechPersistance, Version=1.0.*, Culture=Invariant Language (Invariant Country): 
-	hash=None, flags=None
-Assembly GeoTechPersistance, Version=1.0.*, Culture=Invariant Language (Invariant Country): 
-	hash=None, flags=None
 Class GeoTechController.EstacionController: AutoLayout, AnsiClass, Class, Public
     Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
   Methods:
@@ -29,5 +25,7 @@ Class GeoTechController.UnidadController: AutoLayout, AnsiClass, Class, Public
     Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
   Methods:
     RegistrarUnidad(UnidadInspeccion): PrivateScope, Public, Static, HideBySig
+    ModificarUnidad(UnidadInspeccion): PrivateScope, Public, Static, HideBySig
+    EliminarUnidad(Int32): PrivateScope, Public, Static, HideBySig
     ObtenerUnidades(): PrivateScope, Public, Static, HideBySig
     ObtenerUnidadMayorAutonomia(): PrivateScope, Public, Static, HideBySig

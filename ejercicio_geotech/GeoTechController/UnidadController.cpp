@@ -20,12 +20,26 @@ namespace  GeoTechController {
 			}
 		}
 		UnidadController::unidades->Add(unidad);
-		UnidadPersistence::GuardarEnCSV(UnidadController::unidades);
+		//UnidadPersistence::GuardarEnCSV(UnidadController::unidades);
+		UnidadPersistence::GuardarEstacionEnBD(unidad);
+	}
+
+	void UnidadController::ModificarUnidad(UnidadInspeccion^ unidad) {
+		UnidadPersistence::ModificarEstacionEnBD(unidad);
+		UnidadController::unidades = UnidadPersistence::CargarEstacionesDesdeBD();
+	}
+
+	void UnidadController::EliminarUnidad(int idUnidad) {
+		UnidadPersistence::EliminarEstacionEnBD(idUnidad);
+		UnidadController::unidades = UnidadPersistence::CargarEstacionesDesdeBD();
 	}
 
 	List<UnidadInspeccion^>^ UnidadController::ObtenerUnidades() {
 		return UnidadController::unidades;
 	}
+
+
+
 	UnidadInspeccion^ UnidadController::ObtenerUnidadMayorAutonomia() {
 		if (UnidadController::unidades->Count == 0) return nullptr;
 		

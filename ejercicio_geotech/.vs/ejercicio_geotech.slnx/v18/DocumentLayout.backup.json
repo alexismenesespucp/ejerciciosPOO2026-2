@@ -3,56 +3,60 @@
   "WorkspaceRootPath": "C:\\Users\\alexis-pc\\OneDrive\\Documentos\\Universidad\\Courses\\Programacion_orientada_a_objetos\\ejerciciosPOO2026-2\\ejercicio_geotech\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{9F93D3C1-C38F-60BF-052E-9464C306504D}|GeoTechPersistance\\GeoTechPersistance.vcxproj|C:\\Users\\alexis-pc\\OneDrive\\Documentos\\Universidad\\Courses\\Programacion_orientada_a_objetos\\ejerciciosPOO2026-2\\ejercicio_geotech\\GeoTechPersistance\\EstacionPersistence.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{9F93D3C1-C38F-60BF-052E-9464C306504D}|GeoTechPersistance\\GeoTechPersistance.vcxproj|solutionrelative:GeoTechPersistance\\EstacionPersistence.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{D38AE102-6917-50A8-E5AF-4662A55E1AAF}|GeoTechGUIApp\\GeoTechGUIApp.vcxproj|C:\\Users\\alexis-pc\\OneDrive\\Documentos\\Universidad\\Courses\\Programacion_orientada_a_objetos\\ejerciciosPOO2026-2\\ejercicio_geotech\\GeoTechGUIApp\\UnidadManagementForm.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{D38AE102-6917-50A8-E5AF-4662A55E1AAF}|GeoTechGUIApp\\GeoTechGUIApp.vcxproj|solutionrelative:GeoTechGUIApp\\UnidadManagementForm.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3550DF8C-2C84-001E-5565-17FBE92CD21A}|GeoTechController\\GeoTechController.vcxproj|C:\\Users\\alexis-pc\\OneDrive\\Documentos\\Universidad\\Courses\\Programacion_orientada_a_objetos\\ejerciciosPOO2026-2\\ejercicio_geotech\\GeoTechController\\UnidadController.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{3550DF8C-2C84-001E-5565-17FBE92CD21A}|GeoTechController\\GeoTechController.vcxproj|solutionrelative:GeoTechController\\UnidadController.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9F93D3C1-C38F-60BF-052E-9464C306504D}|GeoTechPersistance\\GeoTechPersistance.vcxproj|C:\\Users\\alexis-pc\\OneDrive\\Documentos\\Universidad\\Courses\\Programacion_orientada_a_objetos\\ejerciciosPOO2026-2\\ejercicio_geotech\\GeoTechPersistance\\EstacionPersistence.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{9F93D3C1-C38F-60BF-052E-9464C306504D}|GeoTechPersistance\\GeoTechPersistance.vcxproj|solutionrelative:GeoTechPersistance\\EstacionPersistence.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3550DF8C-2C84-001E-5565-17FBE92CD21A}|GeoTechController\\GeoTechController.vcxproj|C:\\Users\\alexis-pc\\OneDrive\\Documentos\\Universidad\\Courses\\Programacion_orientada_a_objetos\\ejerciciosPOO2026-2\\ejercicio_geotech\\GeoTechController\\EstacionController.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{3550DF8C-2C84-001E-5565-17FBE92CD21A}|GeoTechController\\GeoTechController.vcxproj|solutionrelative:GeoTechController\\EstacionController.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D38AE102-6917-50A8-E5AF-4662A55E1AAF}|GeoTechGUIApp\\GeoTechGUIApp.vcxproj|C:\\Users\\alexis-pc\\OneDrive\\Documentos\\Universidad\\Courses\\Programacion_orientada_a_objetos\\ejerciciosPOO2026-2\\ejercicio_geotech\\GeoTechGUIApp\\UnidadManagementForm.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{D38AE102-6917-50A8-E5AF-4662A55E1AAF}|GeoTechGUIApp\\GeoTechGUIApp.vcxproj|solutionrelative:GeoTechGUIApp\\UnidadManagementForm.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D38AE102-6917-50A8-E5AF-4662A55E1AAF}|GeoTechGUIApp\\GeoTechGUIApp.vcxproj|C:\\Users\\alexis-pc\\OneDrive\\Documentos\\Universidad\\Courses\\Programacion_orientada_a_objetos\\ejerciciosPOO2026-2\\ejercicio_geotech\\GeoTechGUIApp\\UnidadManagementForm.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}|Form",
-      "RelativeMoniker": "D:0:0:{D38AE102-6917-50A8-E5AF-4662A55E1AAF}|GeoTechGUIApp\\GeoTechGUIApp.vcxproj|solutionrelative:GeoTechGUIApp\\UnidadManagementForm.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3550DF8C-2C84-001E-5565-17FBE92CD21A}|GeoTechController\\GeoTechController.vcxproj|C:\\Users\\alexis-pc\\OneDrive\\Documentos\\Universidad\\Courses\\Programacion_orientada_a_objetos\\ejerciciosPOO2026-2\\ejercicio_geotech\\GeoTechController\\EstacionController.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{3550DF8C-2C84-001E-5565-17FBE92CD21A}|GeoTechController\\GeoTechController.vcxproj|solutionrelative:GeoTechController\\EstacionController.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3550DF8C-2C84-001E-5565-17FBE92CD21A}|GeoTechController\\GeoTechController.vcxproj|C:\\Users\\alexis-pc\\OneDrive\\Documentos\\Universidad\\Courses\\Programacion_orientada_a_objetos\\ejerciciosPOO2026-2\\ejercicio_geotech\\GeoTechController\\GeoTechController.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{3550DF8C-2C84-001E-5565-17FBE92CD21A}|GeoTechController\\GeoTechController.vcxproj|solutionrelative:GeoTechController\\GeoTechController.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{3550DF8C-2C84-001E-5565-17FBE92CD21A}|GeoTechController\\GeoTechController.vcxproj|C:\\Users\\alexis-pc\\OneDrive\\Documentos\\Universidad\\Courses\\Programacion_orientada_a_objetos\\ejerciciosPOO2026-2\\ejercicio_geotech\\GeoTechController\\UnidadController.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{3550DF8C-2C84-001E-5565-17FBE92CD21A}|GeoTechController\\GeoTechController.vcxproj|solutionrelative:GeoTechController\\UnidadController.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{3550DF8C-2C84-001E-5565-17FBE92CD21A}|GeoTechController\\GeoTechController.vcxproj|C:\\Users\\alexis-pc\\OneDrive\\Documentos\\Universidad\\Courses\\Programacion_orientada_a_objetos\\ejerciciosPOO2026-2\\ejercicio_geotech\\GeoTechController\\UnidadController.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{3550DF8C-2C84-001E-5565-17FBE92CD21A}|GeoTechController\\GeoTechController.vcxproj|solutionrelative:GeoTechController\\UnidadController.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{9F93D3C1-C38F-60BF-052E-9464C306504D}|GeoTechPersistance\\GeoTechPersistance.vcxproj|C:\\Users\\alexis-pc\\OneDrive\\Documentos\\Universidad\\Courses\\Programacion_orientada_a_objetos\\ejerciciosPOO2026-2\\ejercicio_geotech\\GeoTechPersistance\\UnidadPersistence.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{9F93D3C1-C38F-60BF-052E-9464C306504D}|GeoTechPersistance\\GeoTechPersistance.vcxproj|solutionrelative:GeoTechPersistance\\UnidadPersistence.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9F93D3C1-C38F-60BF-052E-9464C306504D}|GeoTechPersistance\\GeoTechPersistance.vcxproj|C:\\Users\\alexis-pc\\OneDrive\\Documentos\\Universidad\\Courses\\Programacion_orientada_a_objetos\\ejerciciosPOO2026-2\\ejercicio_geotech\\GeoTechPersistance\\UnidadPersistence.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{9F93D3C1-C38F-60BF-052E-9464C306504D}|GeoTechPersistance\\GeoTechPersistance.vcxproj|solutionrelative:GeoTechPersistance\\UnidadPersistence.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9F93D3C1-C38F-60BF-052E-9464C306504D}|GeoTechPersistance\\GeoTechPersistance.vcxproj|C:\\Users\\alexis-pc\\OneDrive\\Documentos\\Universidad\\Courses\\Programacion_orientada_a_objetos\\ejerciciosPOO2026-2\\ejercicio_geotech\\GeoTechPersistance\\EstacionPersistence.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{9F93D3C1-C38F-60BF-052E-9464C306504D}|GeoTechPersistance\\GeoTechPersistance.vcxproj|solutionrelative:GeoTechPersistance\\EstacionPersistence.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3550DF8C-2C84-001E-5565-17FBE92CD21A}|GeoTechController\\GeoTechController.vcxproj|C:\\Users\\alexis-pc\\OneDrive\\Documentos\\Universidad\\Courses\\Programacion_orientada_a_objetos\\ejerciciosPOO2026-2\\ejercicio_geotech\\GeoTechController\\GeoTechController.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{3550DF8C-2C84-001E-5565-17FBE92CD21A}|GeoTechController\\GeoTechController.vcxproj|solutionrelative:GeoTechController\\GeoTechController.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AAE18F79-1B8F-78CD-4D32-A25E73F7DB2E}|GeoTechModel\\GeoTechModel.vcxproj|C:\\Users\\alexis-pc\\OneDrive\\Documentos\\Universidad\\Courses\\Programacion_orientada_a_objetos\\ejerciciosPOO2026-2\\ejercicio_geotech\\GeoTechModel\\UnidadInspeccion.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{AAE18F79-1B8F-78CD-4D32-A25E73F7DB2E}|GeoTechModel\\GeoTechModel.vcxproj|solutionrelative:GeoTechModel\\UnidadInspeccion.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AAE18F79-1B8F-78CD-4D32-A25E73F7DB2E}|GeoTechModel\\GeoTechModel.vcxproj|C:\\Users\\alexis-pc\\OneDrive\\Documentos\\Universidad\\Courses\\Programacion_orientada_a_objetos\\ejerciciosPOO2026-2\\ejercicio_geotech\\GeoTechModel\\DronAereo.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{AAE18F79-1B8F-78CD-4D32-A25E73F7DB2E}|GeoTechModel\\GeoTechModel.vcxproj|solutionrelative:GeoTechModel\\DronAereo.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3550DF8C-2C84-001E-5565-17FBE92CD21A}|GeoTechController\\GeoTechController.vcxproj|C:\\Users\\alexis-pc\\OneDrive\\Documentos\\Universidad\\Courses\\Programacion_orientada_a_objetos\\ejerciciosPOO2026-2\\ejercicio_geotech\\GeoTechController\\EstacionController.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{3550DF8C-2C84-001E-5565-17FBE92CD21A}|GeoTechController\\GeoTechController.vcxproj|solutionrelative:GeoTechController\\EstacionController.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{9F93D3C1-C38F-60BF-052E-9464C306504D}|GeoTechPersistance\\GeoTechPersistance.vcxproj|C:\\Users\\alexis-pc\\OneDrive\\Documentos\\Universidad\\Courses\\Programacion_orientada_a_objetos\\ejerciciosPOO2026-2\\ejercicio_geotech\\GeoTechPersistance\\GeoTechPersistance.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{9F93D3C1-C38F-60BF-052E-9464C306504D}|GeoTechPersistance\\GeoTechPersistance.vcxproj|solutionrelative:GeoTechPersistance\\GeoTechPersistance.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AAE18F79-1B8F-78CD-4D32-A25E73F7DB2E}|GeoTechModel\\GeoTechModel.vcxproj|C:\\Users\\alexis-pc\\OneDrive\\Documentos\\Universidad\\Courses\\Programacion_orientada_a_objetos\\ejerciciosPOO2026-2\\ejercicio_geotech\\GeoTechModel\\DronAereo.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{AAE18F79-1B8F-78CD-4D32-A25E73F7DB2E}|GeoTechModel\\GeoTechModel.vcxproj|solutionrelative:GeoTechModel\\DronAereo.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{9F93D3C1-C38F-60BF-052E-9464C306504D}|GeoTechPersistance\\GeoTechPersistance.vcxproj|C:\\Users\\alexis-pc\\OneDrive\\Documentos\\Universidad\\Courses\\Programacion_orientada_a_objetos\\ejerciciosPOO2026-2\\ejercicio_geotech\\GeoTechPersistance\\EstacionPersistence.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{9F93D3C1-C38F-60BF-052E-9464C306504D}|GeoTechPersistance\\GeoTechPersistance.vcxproj|solutionrelative:GeoTechPersistance\\EstacionPersistence.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D38AE102-6917-50A8-E5AF-4662A55E1AAF}|GeoTechGUIApp\\GeoTechGUIApp.vcxproj|C:\\Users\\alexis-pc\\OneDrive\\Documentos\\Universidad\\Courses\\Programacion_orientada_a_objetos\\ejerciciosPOO2026-2\\ejercicio_geotech\\GeoTechGUIApp\\UnidadManagementForm.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{D38AE102-6917-50A8-E5AF-4662A55E1AAF}|GeoTechGUIApp\\GeoTechGUIApp.vcxproj|solutionrelative:GeoTechGUIApp\\UnidadManagementForm.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3550DF8C-2C84-001E-5565-17FBE92CD21A}|GeoTechController\\GeoTechController.vcxproj|C:\\Users\\alexis-pc\\OneDrive\\Documentos\\Universidad\\Courses\\Programacion_orientada_a_objetos\\ejerciciosPOO2026-2\\ejercicio_geotech\\GeoTechController\\EstacionController.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{3550DF8C-2C84-001E-5565-17FBE92CD21A}|GeoTechController\\GeoTechController.vcxproj|solutionrelative:GeoTechController\\EstacionController.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{AAE18F79-1B8F-78CD-4D32-A25E73F7DB2E}|GeoTechModel\\GeoTechModel.vcxproj|C:\\Users\\alexis-pc\\OneDrive\\Documentos\\Universidad\\Courses\\Programacion_orientada_a_objetos\\ejerciciosPOO2026-2\\ejercicio_geotech\\GeoTechModel\\EstacionEnlace.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
@@ -61,10 +65,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{AAE18F79-1B8F-78CD-4D32-A25E73F7DB2E}|GeoTechModel\\GeoTechModel.vcxproj|C:\\Users\\alexis-pc\\OneDrive\\Documentos\\Universidad\\Courses\\Programacion_orientada_a_objetos\\ejerciciosPOO2026-2\\ejercicio_geotech\\GeoTechModel\\RoverTerrestre.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{AAE18F79-1B8F-78CD-4D32-A25E73F7DB2E}|GeoTechModel\\GeoTechModel.vcxproj|solutionrelative:GeoTechModel\\RoverTerrestre.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AAE18F79-1B8F-78CD-4D32-A25E73F7DB2E}|GeoTechModel\\GeoTechModel.vcxproj|C:\\Users\\alexis-pc\\OneDrive\\Documentos\\Universidad\\Courses\\Programacion_orientada_a_objetos\\ejerciciosPOO2026-2\\ejercicio_geotech\\GeoTechModel\\UnidadInspeccion.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{AAE18F79-1B8F-78CD-4D32-A25E73F7DB2E}|GeoTechModel\\GeoTechModel.vcxproj|solutionrelative:GeoTechModel\\UnidadInspeccion.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{AAE18F79-1B8F-78CD-4D32-A25E73F7DB2E}|GeoTechModel\\GeoTechModel.vcxproj|C:\\Users\\alexis-pc\\OneDrive\\Documentos\\Universidad\\Courses\\Programacion_orientada_a_objetos\\ejerciciosPOO2026-2\\ejercicio_geotech\\GeoTechModel\\EstacionEnlace.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
@@ -83,10 +83,6 @@
       "RelativeMoniker": "D:0:0:{AAE18F79-1B8F-78CD-4D32-A25E73F7DB2E}|GeoTechModel\\GeoTechModel.vcxproj|solutionrelative:GeoTechModel\\RoverTerrestre.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9F93D3C1-C38F-60BF-052E-9464C306504D}|GeoTechPersistance\\GeoTechPersistance.vcxproj|C:\\Users\\alexis-pc\\OneDrive\\Documentos\\Universidad\\Courses\\Programacion_orientada_a_objetos\\ejerciciosPOO2026-2\\ejercicio_geotech\\GeoTechPersistance\\UnidadPersistence.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{9F93D3C1-C38F-60BF-052E-9464C306504D}|GeoTechPersistance\\GeoTechPersistance.vcxproj|solutionrelative:GeoTechPersistance\\UnidadPersistence.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{AAE18F79-1B8F-78CD-4D32-A25E73F7DB2E}|GeoTechModel\\GeoTechModel.vcxproj|C:\\Users\\alexis-pc\\OneDrive\\Documentos\\Universidad\\Courses\\Programacion_orientada_a_objetos\\ejerciciosPOO2026-2\\ejercicio_geotech\\GeoTechModel\\GeoTechModel.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{AAE18F79-1B8F-78CD-4D32-A25E73F7DB2E}|GeoTechModel\\GeoTechModel.vcxproj|solutionrelative:GeoTechModel\\GeoTechModel.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
@@ -98,7 +94,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 9,
+          "SelectedChildIndex": 7,
           "Children": [
             {
               "$type": "Bookmark",
@@ -118,110 +114,111 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "GeoTechController.h",
-              "DocumentMoniker": "C:\\Users\\alexis-pc\\OneDrive\\Documentos\\Universidad\\Courses\\Programacion_orientada_a_objetos\\ejerciciosPOO2026-2\\ejercicio_geotech\\GeoTechController\\GeoTechController.h",
-              "RelativeDocumentMoniker": "GeoTechController\\GeoTechController.h",
-              "ToolTip": "C:\\Users\\alexis-pc\\OneDrive\\Documentos\\Universidad\\Courses\\Programacion_orientada_a_objetos\\ejerciciosPOO2026-2\\ejercicio_geotech\\GeoTechController\\GeoTechController.h",
-              "RelativeToolTip": "GeoTechController\\GeoTechController.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAYAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2026-10-05T19:52:50.545Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 2,
               "Title": "UnidadController.h",
               "DocumentMoniker": "C:\\Users\\alexis-pc\\OneDrive\\Documentos\\Universidad\\Courses\\Programacion_orientada_a_objetos\\ejerciciosPOO2026-2\\ejercicio_geotech\\GeoTechController\\UnidadController.h",
               "RelativeDocumentMoniker": "GeoTechController\\UnidadController.h",
               "ToolTip": "C:\\Users\\alexis-pc\\OneDrive\\Documentos\\Universidad\\Courses\\Programacion_orientada_a_objetos\\ejerciciosPOO2026-2\\ejercicio_geotech\\GeoTechController\\UnidadController.h",
               "RelativeToolTip": "GeoTechController\\UnidadController.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAADAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAA2AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2026-10-05T21:13:04.939Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "UnidadManagementForm.cpp",
-              "DocumentMoniker": "C:\\Users\\alexis-pc\\OneDrive\\Documentos\\Universidad\\Courses\\Programacion_orientada_a_objetos\\ejerciciosPOO2026-2\\ejercicio_geotech\\GeoTechGUIApp\\UnidadManagementForm.cpp",
-              "RelativeDocumentMoniker": "GeoTechGUIApp\\UnidadManagementForm.cpp",
-              "ToolTip": "C:\\Users\\alexis-pc\\OneDrive\\Documentos\\Universidad\\Courses\\Programacion_orientada_a_objetos\\ejerciciosPOO2026-2\\ejercicio_geotech\\GeoTechGUIApp\\UnidadManagementForm.cpp",
-              "RelativeToolTip": "GeoTechGUIApp\\UnidadManagementForm.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAABAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "UnidadController.cpp",
+              "DocumentMoniker": "C:\\Users\\alexis-pc\\OneDrive\\Documentos\\Universidad\\Courses\\Programacion_orientada_a_objetos\\ejerciciosPOO2026-2\\ejercicio_geotech\\GeoTechController\\UnidadController.cpp",
+              "RelativeDocumentMoniker": "GeoTechController\\UnidadController.cpp",
+              "ToolTip": "C:\\Users\\alexis-pc\\OneDrive\\Documentos\\Universidad\\Courses\\Programacion_orientada_a_objetos\\ejerciciosPOO2026-2\\ejercicio_geotech\\GeoTechController\\UnidadController.cpp",
+              "RelativeToolTip": "GeoTechController\\UnidadController.cpp",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAIwBUAAAAqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2026-10-05T19:49:59.922Z",
+              "WhenOpened": "2026-10-05T21:16:11.601Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "UnidadManagementForm.h [Design]",
-              "DocumentMoniker": "C:\\Users\\alexis-pc\\OneDrive\\Documentos\\Universidad\\Courses\\Programacion_orientada_a_objetos\\ejerciciosPOO2026-2\\ejercicio_geotech\\GeoTechGUIApp\\UnidadManagementForm.h",
-              "RelativeDocumentMoniker": "GeoTechGUIApp\\UnidadManagementForm.h",
-              "ToolTip": "C:\\Users\\alexis-pc\\OneDrive\\Documentos\\Universidad\\Courses\\Programacion_orientada_a_objetos\\ejerciciosPOO2026-2\\ejercicio_geotech\\GeoTechGUIApp\\UnidadManagementForm.h [Design]",
-              "RelativeToolTip": "GeoTechGUIApp\\UnidadManagementForm.h [Design]",
+              "DocumentIndex": 8,
+              "Title": "DronAereo.h",
+              "DocumentMoniker": "C:\\Users\\alexis-pc\\OneDrive\\Documentos\\Universidad\\Courses\\Programacion_orientada_a_objetos\\ejerciciosPOO2026-2\\ejercicio_geotech\\GeoTechModel\\DronAereo.h",
+              "RelativeDocumentMoniker": "GeoTechModel\\DronAereo.h",
+              "ToolTip": "C:\\Users\\alexis-pc\\OneDrive\\Documentos\\Universidad\\Courses\\Programacion_orientada_a_objetos\\ejerciciosPOO2026-2\\ejercicio_geotech\\GeoTechModel\\DronAereo.h",
+              "RelativeToolTip": "GeoTechModel\\DronAereo.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAXAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2026-10-05T19:49:48.741Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2026-10-05T20:07:57.249Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "UnidadManagementForm.h",
               "DocumentMoniker": "C:\\Users\\alexis-pc\\OneDrive\\Documentos\\Universidad\\Courses\\Programacion_orientada_a_objetos\\ejerciciosPOO2026-2\\ejercicio_geotech\\GeoTechGUIApp\\UnidadManagementForm.h",
               "RelativeDocumentMoniker": "GeoTechGUIApp\\UnidadManagementForm.h",
               "ToolTip": "C:\\Users\\alexis-pc\\OneDrive\\Documentos\\Universidad\\Courses\\Programacion_orientada_a_objetos\\ejerciciosPOO2026-2\\ejercicio_geotech\\GeoTechGUIApp\\UnidadManagementForm.h",
               "RelativeToolTip": "GeoTechGUIApp\\UnidadManagementForm.h",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAABgAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAB0BAAAAAAAAAAAAACgBAABDAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2026-10-05T19:51:13.446Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 5,
               "Title": "EstacionPersistence.cpp",
               "DocumentMoniker": "C:\\Users\\alexis-pc\\OneDrive\\Documentos\\Universidad\\Courses\\Programacion_orientada_a_objetos\\ejerciciosPOO2026-2\\ejercicio_geotech\\GeoTechPersistance\\EstacionPersistence.cpp",
               "RelativeDocumentMoniker": "GeoTechPersistance\\EstacionPersistence.cpp",
               "ToolTip": "C:\\Users\\alexis-pc\\OneDrive\\Documentos\\Universidad\\Courses\\Programacion_orientada_a_objetos\\ejerciciosPOO2026-2\\ejercicio_geotech\\GeoTechPersistance\\EstacionPersistence.cpp",
               "RelativeToolTip": "GeoTechPersistance\\EstacionPersistence.cpp",
-              "ViewState": "AgIAACQAAAAAAAAAAAAAAEMAAAAOAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAADAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2026-10-05T21:02:30.616Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "EstacionController.cpp",
-              "DocumentMoniker": "C:\\Users\\alexis-pc\\OneDrive\\Documentos\\Universidad\\Courses\\Programacion_orientada_a_objetos\\ejerciciosPOO2026-2\\ejercicio_geotech\\GeoTechController\\EstacionController.cpp",
-              "RelativeDocumentMoniker": "GeoTechController\\EstacionController.cpp",
-              "ToolTip": "C:\\Users\\alexis-pc\\OneDrive\\Documentos\\Universidad\\Courses\\Programacion_orientada_a_objetos\\ejerciciosPOO2026-2\\ejercicio_geotech\\GeoTechController\\EstacionController.cpp",
-              "RelativeToolTip": "GeoTechController\\EstacionController.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAC0AAAAJAAAAAAAAAA==",
+              "DocumentIndex": 4,
+              "Title": "UnidadPersistence.cpp",
+              "DocumentMoniker": "C:\\Users\\alexis-pc\\OneDrive\\Documentos\\Universidad\\Courses\\Programacion_orientada_a_objetos\\ejerciciosPOO2026-2\\ejercicio_geotech\\GeoTechPersistance\\UnidadPersistence.cpp",
+              "RelativeDocumentMoniker": "GeoTechPersistance\\UnidadPersistence.cpp",
+              "ToolTip": "C:\\Users\\alexis-pc\\OneDrive\\Documentos\\Universidad\\Courses\\Programacion_orientada_a_objetos\\ejerciciosPOO2026-2\\ejercicio_geotech\\GeoTechPersistance\\UnidadPersistence.cpp",
+              "RelativeToolTip": "GeoTechPersistance\\UnidadPersistence.cpp",
+              "ViewState": "AgIAAFYAAAAAAAAAAAAAAHEAAAACAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2026-10-05T21:23:56.552Z",
+              "WhenOpened": "2026-10-05T20:40:22.494Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
+              "Title": "UnidadPersistence.h",
+              "DocumentMoniker": "C:\\Users\\alexis-pc\\OneDrive\\Documentos\\Universidad\\Courses\\Programacion_orientada_a_objetos\\ejerciciosPOO2026-2\\ejercicio_geotech\\GeoTechPersistance\\UnidadPersistence.h",
+              "RelativeDocumentMoniker": "GeoTechPersistance\\UnidadPersistence.h",
+              "ToolTip": "C:\\Users\\alexis-pc\\OneDrive\\Documentos\\Universidad\\Courses\\Programacion_orientada_a_objetos\\ejerciciosPOO2026-2\\ejercicio_geotech\\GeoTechPersistance\\UnidadPersistence.h",
+              "RelativeToolTip": "GeoTechPersistance\\UnidadPersistence.h",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAWwBIAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2026-10-05T20:33:59.566Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
               "Title": "EstacionPersistence.h",
               "DocumentMoniker": "C:\\Users\\alexis-pc\\OneDrive\\Documentos\\Universidad\\Courses\\Programacion_orientada_a_objetos\\ejerciciosPOO2026-2\\ejercicio_geotech\\GeoTechPersistance\\EstacionPersistence.h",
               "RelativeDocumentMoniker": "GeoTechPersistance\\EstacionPersistence.h",
               "ToolTip": "C:\\Users\\alexis-pc\\OneDrive\\Documentos\\Universidad\\Courses\\Programacion_orientada_a_objetos\\ejerciciosPOO2026-2\\ejercicio_geotech\\GeoTechPersistance\\EstacionPersistence.h",
               "RelativeToolTip": "GeoTechPersistance\\EstacionPersistence.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAWwA4AAAAnAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAWwAYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2026-10-05T20:58:29.175Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 9,
               "Title": "EstacionController.h",
               "DocumentMoniker": "C:\\Users\\alexis-pc\\OneDrive\\Documentos\\Universidad\\Courses\\Programacion_orientada_a_objetos\\ejerciciosPOO2026-2\\ejercicio_geotech\\GeoTechController\\EstacionController.h",
               "RelativeDocumentMoniker": "GeoTechController\\EstacionController.h",
@@ -234,20 +231,33 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "UnidadController.cpp",
-              "DocumentMoniker": "C:\\Users\\alexis-pc\\OneDrive\\Documentos\\Universidad\\Courses\\Programacion_orientada_a_objetos\\ejerciciosPOO2026-2\\ejercicio_geotech\\GeoTechController\\UnidadController.cpp",
-              "RelativeDocumentMoniker": "GeoTechController\\UnidadController.cpp",
-              "ToolTip": "C:\\Users\\alexis-pc\\OneDrive\\Documentos\\Universidad\\Courses\\Programacion_orientada_a_objetos\\ejerciciosPOO2026-2\\ejercicio_geotech\\GeoTechController\\UnidadController.cpp",
-              "RelativeToolTip": "GeoTechController\\UnidadController.cpp",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAAABcAAAACAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2026-10-05T21:16:11.601Z",
+              "DocumentIndex": 7,
+              "Title": "UnidadInspeccion.h",
+              "DocumentMoniker": "C:\\Users\\alexis-pc\\OneDrive\\Documentos\\Universidad\\Courses\\Programacion_orientada_a_objetos\\ejerciciosPOO2026-2\\ejercicio_geotech\\GeoTechModel\\UnidadInspeccion.h",
+              "RelativeDocumentMoniker": "GeoTechModel\\UnidadInspeccion.h",
+              "ToolTip": "C:\\Users\\alexis-pc\\OneDrive\\Documentos\\Universidad\\Courses\\Programacion_orientada_a_objetos\\ejerciciosPOO2026-2\\ejercicio_geotech\\GeoTechModel\\UnidadInspeccion.h",
+              "RelativeToolTip": "GeoTechModel\\UnidadInspeccion.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2026-10-05T20:04:04.536Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 6,
+              "Title": "GeoTechController.h",
+              "DocumentMoniker": "C:\\Users\\alexis-pc\\OneDrive\\Documentos\\Universidad\\Courses\\Programacion_orientada_a_objetos\\ejerciciosPOO2026-2\\ejercicio_geotech\\GeoTechController\\GeoTechController.h",
+              "RelativeDocumentMoniker": "GeoTechController\\GeoTechController.h",
+              "ToolTip": "C:\\Users\\alexis-pc\\OneDrive\\Documentos\\Universidad\\Courses\\Programacion_orientada_a_objetos\\ejerciciosPOO2026-2\\ejercicio_geotech\\GeoTechController\\GeoTechController.h",
+              "RelativeToolTip": "GeoTechController\\GeoTechController.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2026-10-05T19:52:50.545Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
               "Title": "GeoTechPersistance.h",
               "DocumentMoniker": "C:\\Users\\alexis-pc\\OneDrive\\Documentos\\Universidad\\Courses\\Programacion_orientada_a_objetos\\ejerciciosPOO2026-2\\ejercicio_geotech\\GeoTechPersistance\\GeoTechPersistance.h",
               "RelativeDocumentMoniker": "GeoTechPersistance\\GeoTechPersistance.h",
@@ -260,33 +270,33 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "UnidadPersistence.h",
-              "DocumentMoniker": "C:\\Users\\alexis-pc\\OneDrive\\Documentos\\Universidad\\Courses\\Programacion_orientada_a_objetos\\ejerciciosPOO2026-2\\ejercicio_geotech\\GeoTechPersistance\\UnidadPersistence.h",
-              "RelativeDocumentMoniker": "GeoTechPersistance\\UnidadPersistence.h",
-              "ToolTip": "C:\\Users\\alexis-pc\\OneDrive\\Documentos\\Universidad\\Courses\\Programacion_orientada_a_objetos\\ejerciciosPOO2026-2\\ejercicio_geotech\\GeoTechPersistance\\UnidadPersistence.h",
-              "RelativeToolTip": "GeoTechPersistance\\UnidadPersistence.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAPAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2026-10-05T20:33:59.566Z",
+              "DocumentIndex": 13,
+              "Title": "EstacionController.cpp",
+              "DocumentMoniker": "C:\\Users\\alexis-pc\\OneDrive\\Documentos\\Universidad\\Courses\\Programacion_orientada_a_objetos\\ejerciciosPOO2026-2\\ejercicio_geotech\\GeoTechController\\EstacionController.cpp",
+              "RelativeDocumentMoniker": "GeoTechController\\EstacionController.cpp",
+              "ToolTip": "C:\\Users\\alexis-pc\\OneDrive\\Documentos\\Universidad\\Courses\\Programacion_orientada_a_objetos\\ejerciciosPOO2026-2\\ejercicio_geotech\\GeoTechController\\EstacionController.cpp",
+              "RelativeToolTip": "GeoTechController\\EstacionController.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAC0AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2026-10-05T21:23:56.552Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 12,
-              "Title": "DronAereo.h",
-              "DocumentMoniker": "C:\\Users\\alexis-pc\\OneDrive\\Documentos\\Universidad\\Courses\\Programacion_orientada_a_objetos\\ejerciciosPOO2026-2\\ejercicio_geotech\\GeoTechModel\\DronAereo.h",
-              "RelativeDocumentMoniker": "GeoTechModel\\DronAereo.h",
-              "ToolTip": "C:\\Users\\alexis-pc\\OneDrive\\Documentos\\Universidad\\Courses\\Programacion_orientada_a_objetos\\ejerciciosPOO2026-2\\ejercicio_geotech\\GeoTechModel\\DronAereo.h",
-              "RelativeToolTip": "GeoTechModel\\DronAereo.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAgAAAASAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2026-10-05T20:07:57.249Z",
+              "Title": "UnidadManagementForm.cpp",
+              "DocumentMoniker": "C:\\Users\\alexis-pc\\OneDrive\\Documentos\\Universidad\\Courses\\Programacion_orientada_a_objetos\\ejerciciosPOO2026-2\\ejercicio_geotech\\GeoTechGUIApp\\UnidadManagementForm.cpp",
+              "RelativeDocumentMoniker": "GeoTechGUIApp\\UnidadManagementForm.cpp",
+              "ToolTip": "C:\\Users\\alexis-pc\\OneDrive\\Documentos\\Universidad\\Courses\\Programacion_orientada_a_objetos\\ejerciciosPOO2026-2\\ejercicio_geotech\\GeoTechGUIApp\\UnidadManagementForm.cpp",
+              "RelativeToolTip": "GeoTechGUIApp\\UnidadManagementForm.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2026-10-05T19:49:59.922Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 14,
               "Title": "EstacionEnlace.h",
               "DocumentMoniker": "C:\\Users\\alexis-pc\\OneDrive\\Documentos\\Universidad\\Courses\\Programacion_orientada_a_objetos\\ejerciciosPOO2026-2\\ejercicio_geotech\\GeoTechModel\\EstacionEnlace.h",
               "RelativeDocumentMoniker": "GeoTechModel\\EstacionEnlace.h",
@@ -299,7 +309,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 15,
               "Title": "RoverTerrestre.h",
               "DocumentMoniker": "C:\\Users\\alexis-pc\\OneDrive\\Documentos\\Universidad\\Courses\\Programacion_orientada_a_objetos\\ejerciciosPOO2026-2\\ejercicio_geotech\\GeoTechModel\\RoverTerrestre.h",
               "RelativeDocumentMoniker": "GeoTechModel\\RoverTerrestre.h",
@@ -308,19 +318,6 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAACAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2026-10-05T20:18:53.274Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "UnidadInspeccion.h",
-              "DocumentMoniker": "C:\\Users\\alexis-pc\\OneDrive\\Documentos\\Universidad\\Courses\\Programacion_orientada_a_objetos\\ejerciciosPOO2026-2\\ejercicio_geotech\\GeoTechModel\\UnidadInspeccion.h",
-              "RelativeDocumentMoniker": "GeoTechModel\\UnidadInspeccion.h",
-              "ToolTip": "C:\\Users\\alexis-pc\\OneDrive\\Documentos\\Universidad\\Courses\\Programacion_orientada_a_objetos\\ejerciciosPOO2026-2\\ejercicio_geotech\\GeoTechModel\\UnidadInspeccion.h",
-              "RelativeToolTip": "GeoTechModel\\UnidadInspeccion.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAeAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2026-10-05T20:04:04.536Z",
               "EditorCaption": ""
             },
             {
@@ -378,18 +375,6 @@
             {
               "$type": "Document",
               "DocumentIndex": 20,
-              "Title": "UnidadPersistence.cpp",
-              "DocumentMoniker": "C:\\Users\\alexis-pc\\OneDrive\\Documentos\\Universidad\\Courses\\Programacion_orientada_a_objetos\\ejerciciosPOO2026-2\\ejercicio_geotech\\GeoTechPersistance\\UnidadPersistence.cpp",
-              "RelativeDocumentMoniker": "GeoTechPersistance\\UnidadPersistence.cpp",
-              "ToolTip": "C:\\Users\\alexis-pc\\OneDrive\\Documentos\\Universidad\\Courses\\Programacion_orientada_a_objetos\\ejerciciosPOO2026-2\\ejercicio_geotech\\GeoTechPersistance\\UnidadPersistence.cpp",
-              "RelativeToolTip": "GeoTechPersistance\\UnidadPersistence.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAAjAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2026-10-05T20:40:22.494Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 21,
               "Title": "GeoTechModel.h",
               "DocumentMoniker": "C:\\Users\\alexis-pc\\OneDrive\\Documentos\\Universidad\\Courses\\Programacion_orientada_a_objetos\\ejerciciosPOO2026-2\\ejercicio_geotech\\GeoTechModel\\GeoTechModel.h",
               "RelativeDocumentMoniker": "GeoTechModel\\GeoTechModel.h",

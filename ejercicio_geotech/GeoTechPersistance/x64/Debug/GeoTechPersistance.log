@@ -1,3 +1,6 @@
-﻿  EstacionPersistence.cpp
+﻿  UnidadPersistence.cpp
+C:\Users\alexis-pc\OneDrive\Documentos\Universidad\Courses\Programacion_orientada_a_objetos\ejerciciosPOO2026-2\ejercicio_geotech\GeoTechPersistance\UnidadPersistence.cpp(130,25): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+  (compiling source file '/UnidadPersistence.cpp')
+  
   AssemblyInfo.obj : MSIL module encountered; incremental linking is disabled for MSIL; performing full link
   GeoTechPersistance.vcxproj -> C:\Users\alexis-pc\OneDrive\Documentos\Universidad\Courses\Programacion_orientada_a_objetos\ejerciciosPOO2026-2\ejercicio_geotech\x64\Debug\GeoTechPersistance.dll

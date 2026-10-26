@@ -23,6 +23,7 @@ namespace GeoTechGUIApp {
 			//InitializeComponent();
 			InicializarComponentesManual();
 			UnidadController::UnidadController();  // Inicializar el controlador de estaciones
+			RefrescarGrilla();
 			//
 			//TODO: Add the constructor code here
 			//
@@ -60,6 +61,8 @@ namespace GeoTechGUIApp {
 		DataGridView^ dgvFlota;
 		Button^ btnRegistrar;
 		Button^ btnMayorAutonomia;
+		Button^ btnModificar;
+		Button^ btnEliminar;
 		void InicializarComponentesManual() {
 			this->Text = "Telemetria y Control de flota - GeoTech SCADA";
 			this->Size = System::Drawing::Size(850, 480);
@@ -68,7 +71,7 @@ namespace GeoTechGUIApp {
 			GroupBox^ grpDatos = gcnew GroupBox();
 			grpDatos->Text = "Parametors de la unidad";
 			grpDatos->Location = Point(15, 15);
-			grpDatos->Size = System::Drawing::Size(280, 400);
+			grpDatos->Size = System::Drawing::Size(280, 500);
 
 			Label^ lblId = gcnew Label();
 			lblId->Text = "ID:";
@@ -78,7 +81,7 @@ namespace GeoTechGUIApp {
 			txtId->Location = Point(120, 27);
 			txtId->Size = System::Drawing::Size(140, 20);
 			Label^ lblCod = gcnew Label();
-			lblCod->Text = "Código Serie:";
+			lblCod->Text = "Codigo Serie:";
 			lblCod->Location = Point(15, 65);
 			lblCod->Size = System::Drawing::Size(100, 20);
 			txtCodigo = gcnew TextBox();
@@ -86,7 +89,7 @@ namespace GeoTechGUIApp {
 			txtCodigo->Size = System::Drawing::Size(140, 20);
 
 			Label^ lblBat = gcnew Label();
-			lblBat->Text = "Batería (%):";
+			lblBat->Text = "Bateria (%):";
 			lblBat->Location = Point(15, 100);
 			lblBat->Size = System::Drawing::Size(100, 20);
 			txtBateria = gcnew TextBox();
@@ -107,7 +110,7 @@ namespace GeoTechGUIApp {
 			cboTipo->SelectedIndexChanged += gcnew EventHandler(this, &UnidadManagementForm::cboTipo_SelectedIndexChanged);
 
 			lblParametroExtra = gcnew Label();
-			lblParametroExtra->Text = "Hélices (4-8):";
+			lblParametroExtra->Text = "Helices (4-8):";
 			lblParametroExtra->Location = Point(15, 170);
 			lblParametroExtra->Size = System::Drawing::Size(100, 20);
 			numParametroExtra = gcnew NumericUpDown();
@@ -123,9 +126,21 @@ namespace GeoTechGUIApp {
 			btnRegistrar->Size = System::Drawing::Size(245, 35);
 			btnRegistrar->Click += gcnew EventHandler(this, &UnidadManagementForm::btnRegistrar_Click);
 
+			btnModificar = gcnew Button();
+			btnModificar->Text = "Modificar Unidad";
+			btnModificar->Location = Point(15, 270);
+			btnModificar->Size = System::Drawing::Size(245, 35);
+			btnModificar->Click += gcnew EventHandler(this, &UnidadManagementForm::btnModificar_Click);
+
+			btnEliminar = gcnew Button();
+			btnEliminar->Text = "Eliminar Unidad";
+			btnEliminar->Location = Point(15, 320);
+			btnEliminar->Size = System::Drawing::Size(245, 35);
+			btnEliminar->Click += gcnew EventHandler(this, &UnidadManagementForm::btnEliminar_Click);
+
 			btnMayorAutonomia = gcnew Button();
-			btnMayorAutonomia->Text = "Buscar Máxima Autonomía";
-			btnMayorAutonomia->Location = Point(15, 270);
+			btnMayorAutonomia->Text = "Buscar Maxima Autonomia";
+			btnMayorAutonomia->Location = Point(15, 370);
 			btnMayorAutonomia->Size = System::Drawing::Size(245, 35);
 			btnMayorAutonomia->Click += gcnew EventHandler(this, &UnidadManagementForm::btnMayorAutonomia_Click);
 
@@ -140,6 +155,8 @@ namespace GeoTechGUIApp {
 			grpDatos->Controls->Add(lblParametroExtra);
 			grpDatos->Controls->Add(numParametroExtra);
 			grpDatos->Controls->Add(btnRegistrar);
+			grpDatos->Controls->Add(btnModificar);
+			grpDatos->Controls->Add(btnEliminar);
 			grpDatos->Controls->Add(btnMayorAutonomia);
 
 			// DataGridView de Flota
@@ -153,21 +170,63 @@ namespace GeoTechGUIApp {
 			dgvFlota->ColumnCount = 6;
 			dgvFlota->Columns[0]->Name = "ID";
 			dgvFlota->Columns[0]->Width = 50;
-			dgvFlota->Columns[1]->Name = "Código";
+			dgvFlota->Columns[1]->Name = "Codigo";
 			dgvFlota->Columns[1]->Width = 90;
 			dgvFlota->Columns[2]->Name = "Tipo";
 			dgvFlota->Columns[2]->Width = 85;
-			dgvFlota->Columns[3]->Name = "Batería";
+			dgvFlota->Columns[3]->Name = "Bateria";
 			dgvFlota->Columns[3]->Width = 65;
-			dgvFlota->Columns[4]->Name = "Autonomía";
+			dgvFlota->Columns[4]->Name = "Autonomia";
 			dgvFlota->Columns[4]->Width = 85;
-			dgvFlota->Columns[5]->Name = "Especificación";
+			dgvFlota->Columns[5]->Name = "Especificacion";
 			dgvFlota->Columns[5]->Width = 110;
+			dgvFlota->Click += gcnew EventHandler(this, &UnidadManagementForm::dvgFlota_Click);
 
 			this->Controls->Add(grpDatos);
 			this->Controls->Add(dgvFlota);
 
+
+
 		}
+
+		void dvgFlota_Click(Object^ sender, EventArgs^ e) {
+			
+			if (dgvFlota->CurrentRow != nullptr && dgvFlota->CurrentRow->Index >= 0) {
+				txtId->Text = dgvFlota->CurrentRow->Cells[0]->Value->ToString();
+				txtCodigo->Text = dgvFlota->CurrentRow->Cells[1]->Value->ToString();
+				String^ batStr = dgvFlota->CurrentRow->Cells[3]->Value->ToString();
+				txtBateria->Text = batStr->Replace("%", "")->Trim();
+				String^ tipoGrid = dgvFlota->CurrentRow->Cells[2]->Value->ToString();
+				if (tipoGrid == "DRONE") {
+					cboTipo->SelectedIndex = 0;
+					//lblParametroExtra->Text = "Helices (4-8):";
+					//numParametroExtra->Minimum = 4;
+					//numParametroExtra->Maximum = 8;
+					//numParametroExtra->DecimalPlaces = 0;
+					//numParametroExtra->Value = 4;
+				}
+				else if (tipoGrid == "ROVER") {
+					cboTipo->SelectedIndex = 1;
+					//lblParametroExtra->Text = "Carga LiDAR (kg):";
+					//numParametroExtra->Minimum = 0;
+					//numParametroExtra->Maximum = 15;
+					//numParametroExtra->DecimalPlaces = 1;
+					//numParametroExtra->Value = 3;
+				}
+				String^ especificacion = dgvFlota->CurrentRow->Cells[5]->Value->ToString();
+
+				array<String^>^ partes = especificacion->Split(' ');
+				if (partes->Length > 0) {
+					try {
+						numParametroExtra->Value = Convert::ToDecimal(partes[0]);
+					}
+					catch (Exception^) {
+					}
+				}
+			}
+
+		}
+
 		void RefrescarGrilla() {
 			dgvFlota->Rows->Clear();
 			for each (UnidadInspeccion ^ u in UnidadController::ObtenerUnidades()) {
@@ -175,11 +234,11 @@ namespace GeoTechGUIApp {
 				String^ extra = "";
 
 				if (DronAereo^ d = dynamic_cast<DronAereo^>(u)) {
-					tipo = "Dron";
-					extra = d->CantidadHelices + " hélices";
+					tipo = "DRONE";
+					extra = d->CantidadHelices + " helices";
 				}
 				else if (RoverTerrestre^ r = dynamic_cast<RoverTerrestre^>(u)) {
-					tipo = "Rover";
+					tipo = "ROVER";
 					extra = r->PesoCargaUtilKg.ToString("F1") + " kg carga";
 				}
 
@@ -195,8 +254,8 @@ namespace GeoTechGUIApp {
 		}
 
 		void cboTipo_SelectedIndexChanged(Object^ sender, EventArgs^ e) {
-			if (cboTipo->Text == "Dron Aéreo") {
-				lblParametroExtra->Text = "Hélices (4-8):";
+			if (cboTipo->Text == "Dron Aereo") {
+				lblParametroExtra->Text = "Helices (4-8):";
 				numParametroExtra->Minimum = 4;
 				numParametroExtra->Maximum = 8;
 				numParametroExtra->DecimalPlaces = 0;
@@ -211,6 +270,34 @@ namespace GeoTechGUIApp {
 			}
 		}
 
+		void btnModificar_Click(Object^ sender, EventArgs^ e) {
+			int id = Convert::ToInt32(txtId->Text);
+			String^ cod = txtCodigo->Text;
+			double bateria = Convert::ToDouble(txtBateria->Text);
+
+			if (String::IsNullOrWhiteSpace(cod))
+				throw gcnew ArgumentException("Debe ingresar un codigo de serie válido.");
+
+			UnidadInspeccion^ nuevaUnidad;
+
+			if (cboTipo->Text == "Dron Aereo") {
+				int helices = Convert::ToInt32(numParametroExtra->Value);
+				nuevaUnidad = gcnew DronAereo(id, cod, bateria, helices);
+			}
+			else {
+				double peso = Convert::ToDouble(numParametroExtra->Value);
+				nuevaUnidad = gcnew RoverTerrestre(id, cod, bateria, peso);
+			}
+			UnidadController::ModificarUnidad(nuevaUnidad);
+
+			RefrescarGrilla();
+		}
+
+		void btnEliminar_Click(Object^ sender, EventArgs^ e) {
+			UnidadController::EliminarUnidad(Convert::ToInt32(txtId->Text));
+			RefrescarGrilla();
+		}
+
 		void btnRegistrar_Click(Object^ sender, EventArgs^ e) {
 			try {
 				int id = Convert::ToInt32(txtId->Text);
@@ -218,7 +305,7 @@ namespace GeoTechGUIApp {
 				double bateria = Convert::ToDouble(txtBateria->Text);
 
 				if (String::IsNullOrWhiteSpace(cod))
-					throw gcnew ArgumentException("Debe ingresar un código de serie válido.");
+					throw gcnew ArgumentException("Debe ingresar un codigo de serie válido.");
 
 				UnidadInspeccion^ nuevaUnidad;
 
@@ -239,10 +326,10 @@ namespace GeoTechGUIApp {
 				txtCodigo->Clear();
 				txtBateria->Clear();
 				MessageBox::Show("Unidad registrada exitosamente y sincronizada en archivo CSV.",
-					"GeoTech Telemetría", MessageBoxButtons::OK, MessageBoxIcon::Information);
+					"GeoTech Telemetria", MessageBoxButtons::OK, MessageBoxIcon::Information);
 			}
 			catch (Exception^ ex) {
-				MessageBox::Show(ex->Message, "Validación de Flota",
+				MessageBox::Show(ex->Message, "Validacion de Flota",
 					MessageBoxButtons::OK, MessageBoxIcon::Warning);
 			}
 		}
@@ -257,12 +344,12 @@ namespace GeoTechGUIApp {
 				}
 
 				String^ info = String::Format(
-					"UNIDAD CON MAYOR TIEMPO DE OPERACIÓN:\n\n" +
-					"ID: {0}\nCódigo Serie: {1}\nBatería: {2}%\nAutonomía Estimada: {3:F2} horas",
+					"UNIDAD CON MAYOR TIEMPO DE OPERACION:\n\n" +
+					"ID: {0}\nCodigo Serie: {1}\nBateria: {2}%\nAutonomia Estimada: {3:F2} horas",
 					mayor->Id, mayor->CodigoSerie, mayor->BateriaRestante, mayor->CalcularAutonomiaHoras()
 				);
 
-				MessageBox::Show(info, "Máxima Autonomía Polimórfica",
+				MessageBox::Show(info, "Maxima Autonomia Polimorfica",
 					MessageBoxButtons::OK, MessageBoxIcon::Information);
 			}
 			catch (Exception^ ex) {
