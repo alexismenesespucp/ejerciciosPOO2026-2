@@ -20,29 +20,29 @@ namespace GeoTechController {
 			throw gcnew ArgumentException("La capacidad debe estar entre 1 y 6.");
 		}
 
-		for each (EstacionEnlace ^ estacion in this->estaciones) {
+		for each (EstacionEnlace ^ estacion in estaciones) {
 			if (estacion->NumeroEstacion == num) {
 				throw gcnew ArgumentException("Ya existe una estación con el mismo número.");
 			}
 		}
 		EstacionEnlace^ nuevaEstacion = gcnew EstacionEnlace(num, ubicacion, capacidad);
-		this->estaciones->Add(nuevaEstacion);
-		EstacionPersistence::GuardarEstaciones(this->estaciones);
+		estaciones->Add(nuevaEstacion);
+		EstacionPersistence::GuardarEstaciones(estaciones);
 	}
 	void EstacionController::ConectarUnidadAEstacion(int numEstacion) {
-		for each (EstacionEnlace ^ estacion in this->estaciones) {
+		for each (EstacionEnlace ^ estacion in estaciones) {
 			if (estacion->NumeroEstacion == numEstacion) {
 				if (!estacion->TieneEspacioDisponible()) {
 					throw gcnew InvalidOperationException("La estación no tiene espacio disponible para conectar más unidades.");
 				}
 				estacion->UnidadesConectadas++;
-				EstacionPersistence::GuardarEstaciones(this->estaciones);
+				EstacionPersistence::GuardarEstaciones(estaciones);
 				return;
 			}
 		}
 		throw gcnew ArgumentException("No se encontró una estación con el número proporcionado.");
 	}
 	List<EstacionEnlace^>^ EstacionController::ObtenerEstaciones() {
-		return this->estaciones;
+		return estaciones;
 	}
 }

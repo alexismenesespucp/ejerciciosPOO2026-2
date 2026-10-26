@@ -8,14 +8,14 @@ namespace GeoTechController {
 	public ref class EstacionController
 	{
 	private: 
-		List<EstacionEnlace^>^ estaciones;
+		static List<EstacionEnlace^>^ estaciones;
 	public:
-		EstacionController() {
-			this->estaciones = EstacionPersistence::CargarEstaciones();
+		static EstacionController() {
+			estaciones = EstacionPersistence::CargarEstaciones();
 		}
-		void RegistrarEstacion(int num, String^ ubicacion, int capacidad);
-		void ConectarUnidadAEstacion(int numEstacion);
-		List<EstacionEnlace^>^ ObtenerEstaciones();
+		static void RegistrarEstacion(int num, String^ ubicacion, int capacidad);
+		static void ConectarUnidadAEstacion(int numEstacion);
+		static List<EstacionEnlace^>^ ObtenerEstaciones();
 
 	};
 }

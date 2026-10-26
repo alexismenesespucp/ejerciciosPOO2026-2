@@ -22,6 +22,7 @@ namespace GeoTechGUIApp {
 		{
 			//InitializeComponent();
 			InicializarComponentesManual();
+			UnidadController::UnidadController();  // Inicializar el controlador de estaciones
 			//
 			//TODO: Add the constructor code here
 			//

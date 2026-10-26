@@ -154,6 +154,7 @@ namespace SimuladorModel {
 			this->puntoLlegada = celdasLibres[indiceFin];
 		}
 
+
 		bool EsCeldaLibre(Point punto) {
 			return EsPasoValido(punto.X, punto.Y);
 		};
