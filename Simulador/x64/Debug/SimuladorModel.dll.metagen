@@ -35,6 +35,9 @@ Class SimuladorModel.Laberinto: AutoLayout, AnsiClass, Class, Public, BeforeFiel
     get_TamanoCeldaHorizontal(): PrivateScope, Public, HideBySig, SpecialName
     get_PuntoInicio(): PrivateScope, Public, HideBySig, SpecialName
     get_PuntoLlegada(): PrivateScope, Public, HideBySig, SpecialName
+    setCelda(Int32, Int32, Int32): PrivateScope, Public, HideBySig
+    SetPuntoInicio(Point): PrivateScope, Public, HideBySig
+    SetPuntoLlegada(Point): PrivateScope, Public, HideBySig
     InicializarMapaParametrico(): PrivateScope, Public, HideBySig
     GenerarLaberintoAleatorio(): PrivateScope, Public, HideBySig
     GenerarLaberintoConMultiplesCaminos(Double): PrivateScope, Public, HideBySig

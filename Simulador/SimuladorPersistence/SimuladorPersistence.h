@@ -2,6 +2,7 @@
 
 using namespace System;
 using namespace SimuladorModel;
+using namespace System::Collections::Generic;
 using namespace System::Data;
 using namespace System::Data::SqlClient;
 namespace SimuladorPersistence {
@@ -12,6 +13,7 @@ namespace SimuladorPersistence {
 		static SqlConnection^ obtenerConexion();
 	public:
 		static int GuardarMapaEnBD(Laberinto^ laberinto);
+		static Dictionary<int, Laberinto^>^ CargarDatosDB();
 		// TODO: Add your methods for this class here.
 	};
 }

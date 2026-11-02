@@ -1,7 +1,3 @@
-﻿  pch.cpp
-  AssemblyInfo.cpp
-  SimuladorController.cpp
-  Generating Code...
-  .NETFramework,Version=v4.7.2.AssemblyAttributes.cpp
+﻿  SimuladorController.cpp
   AssemblyInfo.obj : MSIL module encountered; incremental linking is disabled for MSIL; performing full link
   SimuladorController.vcxproj -> C:\Users\alexis-pc\OneDrive\Documentos\Universidad\Courses\Programacion_orientada_a_objetos\ejerciciosPOO2026-2\Simulador\x64\Debug\SimuladorController.dll

@@ -2,6 +2,8 @@
 
 using namespace System;
 using namespace System::Drawing;
+using namespace System::Collections::Generic;
+
 using namespace SimuladorModel;
 using namespace SimuladorPersistence;
 
@@ -10,6 +12,7 @@ namespace SimuladorController {
 	{
 	private:
 		static Laberinto^ laberinto;
+		static Dictionary<int, Laberinto^>^ laberintos;
 		static bool isLaberintoInialized = false;
 		static RobotExplorador^ robot;
 		static Random^ rDirection;
@@ -41,9 +44,26 @@ namespace SimuladorController {
 		}
 
 		static int GuardarMapaActualEnDB() {
-
 			return Database::GuardarMapaEnBD(laberinto);
 		}
+
+		static void CargarDatosDB() {
+			laberintos =  Database::CargarDatosDB();
+		}
+
+		static Dictionary<int, Laberinto^>^ ObtenerMapasDB() {
+			return laberintos;
+		}
+
+		static List<int>^ idsMapas() {
+			List<int>^ ids = gcnew List<int>();
+			for each (int id in laberintos->Keys) {
+				ids->Add(id);
+			}
+			return ids;
+		}
+
+
 
 		static void Renderizar(Graphics^ g) {
 			if(isLaberintoInialized) laberinto->Dibujar(g);

@@ -52,6 +52,10 @@ namespace SimuladorModel {
 		property Point PuntoInicio { Point get() { return puntoInicio; } };
 		property Point PuntoLlegada { Point get() { return puntoLlegada; } };
 
+		void setCelda(int fila, int columna, int valor) { mapa[fila, columna] = valor; };
+		void SetPuntoInicio(Point p) { puntoInicio = p; };
+		void SetPuntoLlegada(Point p) { puntoLlegada = p; };
+
 		void InicializarMapaParametrico() {
 			for (int i = 0; i < this->filas; i++) {
 				for (int j = 0; j < this->columnas; j++) {

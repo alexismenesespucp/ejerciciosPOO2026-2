@@ -19,6 +19,12 @@ namespace SimuladorGUIApp {
 			pasoActualVisualizacion = 0;
 			InitializeComponent();
 			CargarListaMapas();
+			SimuladorLaberintoController::CargarDatosDB();
+
+			for (int i = 0; i < SimuladorLaberintoController::idsMapas()->Count; i++) {
+				int idMapa = SimuladorLaberintoController::idsMapas()[i];
+				this->cboMapasDB->Items->Add(idMapa);
+			}
 		}
 
 	protected:

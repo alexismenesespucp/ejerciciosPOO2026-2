@@ -24,6 +24,7 @@ namespace SimuladorPersistence {
 		reader->Close();
 		return gcnew SqlConnection(connectionString);
 	}
+
 	int Database::GuardarMapaEnBD(Laberinto^ laberinto) {
 		SqlConnection^ conexion = obtenerConexion();
 		try {
@@ -79,5 +80,67 @@ namespace SimuladorPersistence {
 			}
 		}
 		return 0;
+	}
+
+	Dictionary<int, Laberinto^>^ Database::CargarDatosDB() {
+		Dictionary<int, Laberinto^>^ mapas = gcnew Dictionary<int, Laberinto^>();
+		Laberinto^ nuevoLaberinto;
+		SqlConnection^ conexion = obtenerConexion();
+		Point puntoInicio;
+		Point puntoLlegada;
+		try {
+			conexion->Open();
+			String^ query = "SELECT * FROM Mapa";
+			SqlCommand^ command = gcnew SqlCommand(query, conexion);
+			SqlDataReader^ reader = command->ExecuteReader();
+			while (reader->Read()) {
+				int idMapa = reader->GetInt32(reader->GetOrdinal("IdMapa"));
+				String^ fechaCreacion = reader->GetDateTime(reader->GetOrdinal("FechaCreacion")).ToString("yyyy-MM-dd HH:mm");
+				int filas = reader->GetInt32(reader->GetOrdinal("TotalFilas"));
+				int columnas = reader->GetInt32(reader->GetOrdinal("TotalColumnas"));
+				int inicioFila = reader->GetInt32(reader->GetOrdinal("InicioFila"));
+				int inicioColumna = reader->GetInt32(reader->GetOrdinal("InicioColumna"));
+				int finFila = reader->GetInt32(reader->GetOrdinal("FinFila"));
+				int  finColumna = reader->GetInt32(reader->GetOrdinal("FinColumna"));
+				String^ heuristica = reader->GetString(reader->GetOrdinal("TipoDistancia"));
+				int pesoH = reader->GetInt32(reader->GetOrdinal("MovimientoCeldaHorizontal"));
+				int pesoV = reader->GetInt32(reader->GetOrdinal("MovimientoCeldaVertical"));
+				int pesoD = reader->GetInt32(reader->GetOrdinal("MovimientoCeldaDiagonal"));
+				puntoInicio = Point(inicioFila, inicioColumna);
+				puntoLlegada = Point(finFila, finColumna);
+				nuevoLaberinto = gcnew Laberinto(filas, columnas, 800, 600, heuristica, pesoH, pesoV, pesoD);
+				nuevoLaberinto->SetPuntoInicio(puntoInicio);
+				nuevoLaberinto->SetPuntoLlegada(puntoLlegada);
+				mapas->Add(idMapa, nuevoLaberinto);
+			}
+			reader->Close();
+
+
+			for each (int clave in gcnew List<int>(mapas->Keys)) {
+
+				Laberinto^ laberinto = mapas[clave];
+				String^ query = String::Format("SELECT * FROM MapaCelda WHERE IdMapa = {0}", clave);
+				SqlCommand^ command = gcnew SqlCommand(query, conexion);
+				SqlDataReader^ reader = command->ExecuteReader();
+				while (reader->Read()) {
+					int fila = reader->GetInt32(reader->GetOrdinal("Fila"));
+					int columna = reader->GetInt32(reader->GetOrdinal("Columna"));
+					bool esMuro = reader->GetBoolean(reader->GetOrdinal("EsMuro"));
+					laberinto->setCelda(fila, columna, esMuro ? 1 : 0);
+				}
+				reader->Close();
+			}
+		}
+		catch (Exception^ ex) {
+			Console::WriteLine("Error al cargar el mapa desde la base de datos: {0}", ex->Message);
+		}
+		finally {
+			if (conexion->State == ConnectionState::Open) {
+				conexion->Close();
+			}
+		}		
+
+		return mapas;
+
 	}
 }
