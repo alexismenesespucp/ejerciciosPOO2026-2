@@ -1,0 +1,2 @@
+C:\Users\alexis-pc\OneDrive\Documentos\Universidad\Courses\Programacion_orientada_a_objetos\ejerciciosPOO2026-2\Simulador\SimuladorPersistence\x64\Debug\SimuladorPersistence.vcxproj.AssemblyReference.cache
+C:\Users\alexis-pc\OneDrive\Documentos\Universidad\Courses\Programacion_orientada_a_objetos\ejerciciosPOO2026-2\Simulador\SimuladorPersistence\x64\Debug\Simulado.60235D14.Up2Date

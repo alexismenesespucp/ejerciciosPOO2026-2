@@ -3,19 +3,25 @@
 using namespace System;
 using namespace System::Drawing;
 using namespace SimuladorModel;
+using namespace SimuladorPersistence;
 
 namespace SimuladorController {
 	public ref class SimuladorLaberintoController abstract sealed
 	{
 	private:
 		static Laberinto^ laberinto;
+		static bool isLaberintoInialized = false;
 		static RobotExplorador^ robot;
 		static Random^ rDirection;
 	public:
 		static SimuladorLaberintoController() {
-			laberinto = gcnew Laberinto(11, 11, 30);
-			robot = gcnew RobotExplorador(laberinto->PuntoInicio, "RoboExplorador");
 			rDirection = gcnew Random();
+		}
+
+		static void GenerarNuevoMapa(int filas, int columnas, String^ heuristica, int pesoH, int pesoV, int pesoD, int canvasWidth, int canvasHeight) {
+			laberinto = gcnew Laberinto(filas, columnas, canvasWidth, canvasHeight, heuristica, pesoH, pesoV, pesoD);
+			robot = gcnew RobotExplorador(laberinto->PuntoInicio, "RoboExplorador");
+			isLaberintoInialized = true;
 		}
 
 		static Laberinto^ ObetenerLaberinto() { return laberinto; };
@@ -33,8 +39,14 @@ namespace SimuladorController {
 			} while (!laberinto->EsCeldaLibre(nuevaPosicion));
 			robot->mover(nuevaPosicion);
 		}
+
+		static int GuardarMapaActualEnDB() {
+
+			return Database::GuardarMapaEnBD(laberinto);
+		}
+
 		static void Renderizar(Graphics^ g) {
-			laberinto->Dibujar(g);
+			if(isLaberintoInialized) laberinto->Dibujar(g);
 			robot->Dibujar(g, 30);
 		}
 	};

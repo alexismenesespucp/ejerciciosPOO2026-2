@@ -12,17 +12,27 @@ Assembly System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f
 Assembly System.Xml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
 	hash=None, flags=None
 Class SimuladorModel.Laberinto: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
-    Void .ctor(Int32, Int32, Int32): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(Int32, Int32, Int32, Int32, System.String, Int32, Int32, Int32): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
   Properties:
     System.Drawing.Point PuntoLlegada 'get ' : 
     System.Drawing.Point PuntoInicio 'get ' : 
-    Int32 TamanoCelda 'get ' : 
+    Int32 TamanoCeldaHorizontal 'get ' : 
+    Int32 TamanoCeldaVertical 'get ' : 
+    Int32 PesoD 'get ' : 
+    Int32 PesoV 'get ' : 
+    Int32 PesoH 'get ' : 
+    System.String Heuristica 'get ' : 
     Int32 Columnas 'get ' : 
     Int32 Filas 'get ' : 
   Methods:
     get_Filas(): PrivateScope, Public, HideBySig, SpecialName
     get_Columnas(): PrivateScope, Public, HideBySig, SpecialName
-    get_TamanoCelda(): PrivateScope, Public, HideBySig, SpecialName
+    get_Heuristica(): PrivateScope, Public, HideBySig, SpecialName
+    get_PesoH(): PrivateScope, Public, HideBySig, SpecialName
+    get_PesoV(): PrivateScope, Public, HideBySig, SpecialName
+    get_PesoD(): PrivateScope, Public, HideBySig, SpecialName
+    get_TamanoCeldaVertical(): PrivateScope, Public, HideBySig, SpecialName
+    get_TamanoCeldaHorizontal(): PrivateScope, Public, HideBySig, SpecialName
     get_PuntoInicio(): PrivateScope, Public, HideBySig, SpecialName
     get_PuntoLlegada(): PrivateScope, Public, HideBySig, SpecialName
     InicializarMapaParametrico(): PrivateScope, Public, HideBySig

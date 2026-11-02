@@ -161,6 +161,9 @@
     <ProjectReference Include="..\SimuladorModel\SimuladorModel.vcxproj">
       <Project>{4968da9c-c251-80c2-27cb-8ee117231da7}</Project>
     </ProjectReference>
+    <ProjectReference Include="..\SimuladorPersistence\SimuladorPersistence.vcxproj">
+      <Project>{2ef8a183-5946-f883-49bb-28c8670a6a72}</Project>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

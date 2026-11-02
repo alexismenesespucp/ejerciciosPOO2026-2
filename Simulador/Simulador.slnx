@@ -6,4 +6,5 @@
   <Project Path="SimuladorController/SimuladorController.vcxproj" />
   <Project Path="SimuladorGUIApp/SimuladorGUIApp.vcxproj" />
   <Project Path="SimuladorModel/SimuladorModel.vcxproj" />
+  <Project Path="SimuladorPersistence/SimuladorPersistence.vcxproj" />
 </Solution>

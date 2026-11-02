@@ -10,7 +10,12 @@ namespace SimuladorModel {
 	private:
 		int filas;
 		int columnas;
-		int tamanoCelda;
+		int tamanoCeldaHorizontal;
+		int tamanoCeldaVertical;
+		String^ heuristica;
+		int pesoH;
+		int pesoV;
+		int pesoD;
 		array<int, 2>^ mapa;
 
 		Point puntoInicio;
@@ -19,10 +24,15 @@ namespace SimuladorModel {
 		Random^ rng;
 
 	public:
-		Laberinto(int filas, int columnas, int tamanoCelda) {
+		Laberinto(int filas, int columnas, int canvasWidth, int canvasHeight, String^ heuristica, int pesoH, int pesoV, int pesoD) {
 			this->filas = filas;
 			this->columnas = columnas;
-			this->tamanoCelda = tamanoCelda;
+			this->tamanoCeldaHorizontal = canvasWidth / columnas;
+			this->tamanoCeldaVertical = canvasHeight / filas;
+			this->heuristica = heuristica;
+			this->pesoH = pesoH;
+			this->pesoV = pesoV;
+			this->pesoD = pesoD;
 			this->rng = gcnew Random();
 			this->mapa = gcnew array<int, 2>(filas, columnas);
 			//InicializarMapaParametrico();
@@ -32,7 +42,12 @@ namespace SimuladorModel {
 
 		property int Filas { int get() { return filas; } };
 		property int Columnas { int get() { return columnas; } };
-		property int TamanoCelda { int get() { return tamanoCelda; } };
+		property String^ Heuristica { String^ get() { return heuristica; } };
+		property int PesoH { int get() { return pesoH; } };
+		property int PesoV { int get() { return pesoV; } };
+		property int PesoD { int get() { return pesoD; } };
+		property int TamanoCeldaVertical { int get() { return tamanoCeldaVertical; } };
+		property int TamanoCeldaHorizontal { int get() { return tamanoCeldaHorizontal; } };
 
 		property Point PuntoInicio { Point get() { return puntoInicio; } };
 		property Point PuntoLlegada { Point get() { return puntoLlegada; } };
@@ -169,32 +184,32 @@ namespace SimuladorModel {
 		void Dibujar(Graphics^ g) {
 			for (int i = 0; i < this->filas; i++) {
 				for (int j = 0; j < this->columnas; j++) {
-					int x = j * tamanoCelda;
-					int y = i * tamanoCelda;
+					int x = j * tamanoCeldaHorizontal;
+					int y = i * tamanoCeldaVertical;
 					if (mapa[i, j] == 1) {
 						SolidBrush^ brochaPared = gcnew SolidBrush(Color::FromArgb(45, 52, 64));
-						g->FillRectangle(brochaPared, x, y, tamanoCelda, tamanoCelda);
-						g->DrawRectangle(gcnew Pen(Color::FromArgb(30, 36, 46), 1), x, y, tamanoCelda, tamanoCelda);
+						g->FillRectangle(brochaPared, x, y, tamanoCeldaHorizontal, tamanoCeldaVertical);
+						g->DrawRectangle(gcnew Pen(Color::FromArgb(30, 36, 46), 1), x, y, tamanoCeldaHorizontal, tamanoCeldaVertical	);
 					}
 					else {
 						SolidBrush^ brochaPiso = gcnew SolidBrush(Color::FromArgb(240, 243, 246));
-						g->FillRectangle(brochaPiso, x, y, tamanoCelda, tamanoCelda);
-						g->DrawRectangle(gcnew Pen(Color::FromArgb(215, 220, 226), 1), x, y, tamanoCelda, tamanoCelda);
+						g->FillRectangle(brochaPiso, x, y, tamanoCeldaHorizontal, tamanoCeldaVertical);
+						g->DrawRectangle(gcnew Pen(Color::FromArgb(215, 220, 226), 1), x, y, tamanoCeldaHorizontal, tamanoCeldaVertical);
 					}
 
 				}
 			}
 
-			int xIni = puntoInicio.Y * tamanoCelda;
-			int yIni = puntoInicio.X * tamanoCelda;
+			int xIni = puntoInicio.Y * tamanoCeldaHorizontal;
+			int yIni = puntoInicio.X * tamanoCeldaVertical;
 			SolidBrush^ brochaIni = gcnew SolidBrush(Color::LimeGreen);
-			g->FillRectangle(brochaIni, xIni+3, yIni+3, tamanoCelda-6, tamanoCelda-6);
+			g->FillRectangle(brochaIni, xIni+3, yIni+3, tamanoCeldaHorizontal-6, tamanoCeldaVertical-6);
 			g->DrawString("A", gcnew Font("Arial", 8, FontStyle::Bold), Brushes::White, (float)(xIni + 5), (float)(yIni + 4));
 				
-			int xFin = puntoLlegada.Y * tamanoCelda;
-			int yFin = puntoLlegada.X * tamanoCelda;
+			int xFin = puntoLlegada.Y * tamanoCeldaHorizontal;
+			int yFin = puntoLlegada.X * tamanoCeldaVertical;
 			SolidBrush^ brochaFin = gcnew SolidBrush(Color::Crimson);
-			g->FillRectangle(brochaFin, xFin + 3, yFin + 3, tamanoCelda - 6, tamanoCelda - 6);
+			g->FillRectangle(brochaFin, xFin + 3, yFin + 3, tamanoCeldaHorizontal - 6, tamanoCeldaVertical - 6);
 			g->DrawString("B", gcnew Font("Arial", 8, FontStyle::Bold), Brushes::White, (float)(xFin + 5), (float)(yFin + 4));
 
 		};
