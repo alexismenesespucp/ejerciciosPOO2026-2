@@ -108,7 +108,7 @@ namespace SimuladorPersistence {
 				int pesoD = reader->GetInt32(reader->GetOrdinal("MovimientoCeldaDiagonal"));
 				puntoInicio = Point(inicioFila, inicioColumna);
 				puntoLlegada = Point(finFila, finColumna);
-				nuevoLaberinto = gcnew Laberinto(filas, columnas, 800, 600, heuristica, pesoH, pesoV, pesoD);
+				nuevoLaberinto = gcnew Laberinto(filas, columnas, width, height, heuristica, pesoH, pesoV, pesoD);
 				nuevoLaberinto->SetPuntoInicio(puntoInicio);
 				nuevoLaberinto->SetPuntoLlegada(puntoLlegada);
 				mapas->Add(idMapa, nuevoLaberinto);

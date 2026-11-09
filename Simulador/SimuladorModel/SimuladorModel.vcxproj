@@ -131,6 +131,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="NodoAEstrella.h" />
     <ClInclude Include="Laberinto.h" />
     <ClInclude Include="pch.h" />
     <ClInclude Include="Resource.h" />
@@ -148,6 +149,7 @@
     </ClCompile>
     <ClCompile Include="RobotExplorador.cpp" />
     <ClCompile Include="SimuladorModel.cpp" />
+    <ClCompile Include="NodoAEstrella.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="app.rc" />

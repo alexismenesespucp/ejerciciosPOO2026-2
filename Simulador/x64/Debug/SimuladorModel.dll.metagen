@@ -45,8 +45,10 @@ Class SimuladorModel.Laberinto: AutoLayout, AnsiClass, Class, Public, BeforeFiel
     EsPasoValido(Int32, Int32): PrivateScope, Public, HideBySig
     Dibujar(Graphics): PrivateScope, Public, HideBySig
 Class SimuladorModel.RobotExplorador: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
-    Void .ctor(System.Drawing.Point, System.String): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.Drawing.Point, System.String, Int32, Int32): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
   Properties:
+    Int32 tamanoCeldaHeight 'get set' : 
+    Int32 tamanoCeldaWidth 'get set' : 
     System.String Alias 'get set' : 
     System.Drawing.Point posicion 'get set' : 
   Methods:
@@ -54,7 +56,20 @@ Class SimuladorModel.RobotExplorador: AutoLayout, AnsiClass, Class, Public, Befo
     set_posicion(Point): PrivateScope, Public, HideBySig, SpecialName
     get_Alias(): PrivateScope, Public, HideBySig, SpecialName
     set_Alias(String): PrivateScope, Public, HideBySig, SpecialName
+    get_tamanoCeldaWidth(): PrivateScope, Public, HideBySig, SpecialName
+    set_tamanoCeldaWidth(Int32): PrivateScope, Public, HideBySig, SpecialName
+    get_tamanoCeldaHeight(): PrivateScope, Public, HideBySig, SpecialName
+    set_tamanoCeldaHeight(Int32): PrivateScope, Public, HideBySig, SpecialName
     mover(Point): PrivateScope, Public, HideBySig
-    Dibujar(Graphics, Int32): PrivateScope, Public, HideBySig
+    Dibujar(Graphics): PrivateScope, Public, HideBySig
 Class SimuladorModel.Class1: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
     Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+Class SimuladorModel.NodoAEstrella: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(System.Drawing.Point, Double, Double, Double, SimuladorModel.NodoAEstrella): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    System.Drawing.Point punto : Public
+    Double g : Public
+    Double h : Public
+    Double f : Public
+    SimuladorModel.NodoAEstrella padre : Public
+    Boolean cerrado : Public

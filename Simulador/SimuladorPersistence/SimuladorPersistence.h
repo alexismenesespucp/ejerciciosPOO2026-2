@@ -9,11 +9,17 @@ namespace SimuladorPersistence {
 	public ref class Database abstract sealed
 	{
 	private:
+		static int width;
+		static int height;
 		static String^ RUTA_CONFIGURACION_DB = "configuracion_db.txt";
 		static SqlConnection^ obtenerConexion();
 	public:
 		static int GuardarMapaEnBD(Laberinto^ laberinto);
 		static Dictionary<int, Laberinto^>^ CargarDatosDB();
+		static void setWidthHeight(int w, int h) {
+			width = w;
+			height = h;
+		}
 		// TODO: Add your methods for this class here.
 	};
 }

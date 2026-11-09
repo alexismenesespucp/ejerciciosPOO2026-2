@@ -7,25 +7,30 @@ namespace SimuladorGUIApp {
 	using namespace System::Collections;
 	using namespace System::Windows::Forms;
 	using namespace System::Data;
+	using namespace System::Threading;
 	using namespace System::Drawing;
 	using namespace SimuladorController;
 
 	public ref class FormLaberinto : public System::Windows::Forms::Form
 	{
 	public:
+		Thread^ threadBD;
+		delegate void ActualizarBD();
 		FormLaberinto(void)
 		{
 			isGenerationEnabled = false;
 			pasoActualVisualizacion = 0;
 			InitializeComponent();
 			CargarListaMapas();
-			SimuladorLaberintoController::CargarDatosDB();
+			SimuladorLaberintoController::SetWidthHeight(this->pictureBox1->Width, this->pictureBox1->Height);
+			SimuladorLaberintoController::setTipoDistancia(this->cboHeuristica->SelectedItem->ToString());
+			SimuladorLaberintoController::setValoresMovimiento(Convert::ToDouble(this->numPesoH->Value), Convert::ToDouble(this->numPesoV->Value), Convert::ToDouble(this->numPesoD->Value));
 
-			for (int i = 0; i < SimuladorLaberintoController::idsMapas()->Count; i++) {
-				int idMapa = SimuladorLaberintoController::idsMapas()[i];
-				this->cboMapasDB->Items->Add(idMapa);
-			}
+			threadBD = gcnew Thread(gcnew ThreadStart(this, &FormLaberinto::ObtenerInformacionBaseDeDatos));
+			threadBD->Start();
 		}
+
+
 
 	protected:
 		~FormLaberinto()
@@ -344,7 +349,7 @@ namespace SimuladorGUIApp {
 			this->dgvPasosAStar->ReadOnly = true;
 			this->dgvPasosAStar->AllowUserToAddRows = false;
 			this->dgvPasosAStar->SelectionMode = System::Windows::Forms::DataGridViewSelectionMode::FullRowSelect;
-			this->dgvPasosAStar->ColumnCount = 5;
+			this->dgvPasosAStar->ColumnCount = 6;
 			this->dgvPasosAStar->Columns[0]->Name = L"Paso";
 			this->dgvPasosAStar->Columns[0]->Width = 50;
 			this->dgvPasosAStar->Columns[1]->Name = L"Celda [F,C]";
@@ -355,6 +360,8 @@ namespace SimuladorGUIApp {
 			this->dgvPasosAStar->Columns[3]->Width = 85;
 			this->dgvPasosAStar->Columns[4]->Name = L"F Total";
 			this->dgvPasosAStar->Columns[4]->Width = 80;
+			this->dgvPasosAStar->Columns[5]->Name = L"Pila";
+			this->dgvPasosAStar->Columns[5]->Width = 80;
 			this->dgvPasosAStar->CellClick += gcnew System::Windows::Forms::DataGridViewCellEventHandler(this, &FormLaberinto::dgvPasosAStar_CellClick);
 
 			// 
@@ -393,6 +400,26 @@ namespace SimuladorGUIApp {
 		// =========================================================================
 
 	private:
+
+		void ObtenerInformacionBaseDeDatos() {
+			while (true) {
+				Thread::Sleep(1000);
+				ActualizarBD^ actualizar = gcnew ActualizarBD(this, &FormLaberinto::ActualizarInformacionBaseDeDatos);
+				this->Invoke(actualizar);
+				
+			}
+		}
+		
+		void ActualizarInformacionBaseDeDatos() {
+			SimuladorLaberintoController::CargarDatosDB();
+			this->cboMapasDB->Items->Clear();
+			for (int i = 0; i < SimuladorLaberintoController::idsMapas()->Count; i++) {
+				int idMapa = SimuladorLaberintoController::idsMapas()[i];
+				this->cboMapasDB->Items->Add(idMapa);
+			}
+			Console::WriteLine("Ejecucion datos");
+		}
+
 		// Actualiza los controles del formulario según el estado del mapa actual
 		void SincronizarCamposConModelo()
 		{
@@ -553,33 +580,22 @@ namespace SimuladorGUIApp {
 		// 5. Cargar un mapa histórico desde BD
 		System::Void btnCargarMapa_Click(System::Object^ sender, System::EventArgs^ e)
 		{
-			//if (this->cboMapasDB->SelectedIndex < 0) return;
+			if (this->cboMapasDB->SelectedIndex < 0) return;
 
-			//try {
-			//	this->timerPasoPaso->Stop();
-			//	String^ textoSeleccionado = this->cboMapasDB->SelectedItem->ToString();
-			//	// Extrae el ID del formato "ID: X | ..."
-			//	int idMapa = Convert::ToInt32(textoSeleccionado->Split('|')[0]->Replace("ID:", "")->Trim());
+			int valor = Convert::ToInt32(this->cboMapasDB->SelectedItem->ToString());
+			try {
+				
+				SimuladorLaberintoController::SeleccionarLaberinto(valor);
+				this->isGenerationEnabled = true;
+				this->pictureBox1->Invalidate();
+				SimuladorLaberintoController::setTipoDistancia(this->cboHeuristica->SelectedItem->ToString());
+				SimuladorLaberintoController::setValoresMovimiento(Convert::ToDouble(this->numPesoH->Value), Convert::ToDouble(this->numPesoV->Value), Convert::ToDouble(this->numPesoD->Value));
 
-			//	SimuladorLaberintoController::CargarMapaDesdeDB(idMapa);
-
-			//	// Actualiza controles de la vista con la metadata leída
-			//	this->numFilas->Value = SimuladorLaberintoController::TotalFilas;
-			//	this->numColumnas->Value = SimuladorLaberintoController::TotalColumnas;
-			//	this->cboHeuristica->SelectedItem = SimuladorLaberintoController::TipoDistancia;
-			//	this->numPesoH->Value = SimuladorLaberintoController::PesoH;
-			//	this->numPesoV->Value = SimuladorLaberintoController::PesoV;
-			//	this->numPesoD->Value = SimuladorLaberintoController::PesoD;
-
-			//	this->isGenerationEnabled = true;
-			//	this->pasoActualVisualizacion = -1;
-			//	SincronizarCamposConModelo();
-			//	CargarTablaSolucion();
-			//	this->pictureBox1->Invalidate();
-			//}
-			//catch (Exception^ ex) {
-			//	MessageBox::Show(ex->Message, L"Error al cargar mapa", MessageBoxButtons::OK, MessageBoxIcon::Error);
-			//}
+				SimuladorLaberintoController::IniciarBusqueda();
+			}
+			catch (Exception^ ex) {
+				MessageBox::Show(ex->Message, L"Error al cargar mapa", MessageBoxButtons::OK, MessageBoxIcon::Error);
+			}
 		}
 
 		// 6. Eliminar el mapa seleccionado en BD

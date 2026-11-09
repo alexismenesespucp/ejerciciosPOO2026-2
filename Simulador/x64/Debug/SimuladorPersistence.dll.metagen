@@ -17,3 +17,4 @@ Class SimuladorPersistence.Database: AutoLayout, AnsiClass, Class, Public, Abstr
   Methods:
     GuardarMapaEnBD(Laberinto): PrivateScope, Public, Static, HideBySig
     CargarDatosDB(): PrivateScope, Public, Static, HideBySig
+    setWidthHeight(Int32, Int32): PrivateScope, Public, Static, HideBySig

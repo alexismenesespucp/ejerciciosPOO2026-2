@@ -9,28 +9,31 @@ namespace SimuladorModel {
 	public:
 		property Point posicion;
 		property String^ Alias;
-		RobotExplorador(Point posicionInicial, String^ alias) {
+		property int tamanoCeldaWidth;
+		property int tamanoCeldaHeight;
+		RobotExplorador(Point posicionInicial, String^ alias, int tamanoCeldaWidth, int tamanoCeldaHeight) {
 			this->posicion = posicionInicial;
 			this->Alias = alias;
+			this->tamanoCeldaWidth = tamanoCeldaWidth;
+			this->tamanoCeldaHeight = tamanoCeldaHeight;
 		}
 
 		void mover(Point nuevaPosicion) {
 			this->posicion = nuevaPosicion;
 		}
 
-		void Dibujar(Graphics^ g, int tamanoCelda) {
-			int px = this->posicion.Y * tamanoCelda;
-			int py = this->posicion.X * tamanoCelda;
+		void Dibujar(Graphics^ g) {
+			int px = this->posicion.Y * this->tamanoCeldaWidth;
+			int py = this->posicion.X * this->tamanoCeldaHeight;
 			int margen = 6;
-			int diametro = tamanoCelda - (margen * 2);
-
+			int diametro = this->tamanoCeldaHeight - (margen * 2);
 			SolidBrush^ brochaCuerpo = gcnew SolidBrush(Color::DodgerBlue);
 			g->FillEllipse(brochaCuerpo, px + margen, py + margen, diametro, diametro);
 			g->DrawEllipse(gcnew Pen(Color::Navy, 2), px + margen, py + margen, diametro, diametro);
 
 			// Núcleo central
 			SolidBrush^ brochaCentro = gcnew SolidBrush(Color::Yellow);
-			g->FillEllipse(brochaCentro, px + (tamanoCelda / 2) - 4, py + (tamanoCelda / 2) - 4, 8, 8);
+			g->FillEllipse(brochaCentro, px + (this->tamanoCeldaWidth / 2) - 4, py + (this->tamanoCeldaHeight / 2) - 4, 8, 8);
 		}
 	};
 }
