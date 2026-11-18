@@ -1,0 +1,15 @@
+{
+    "version": 1,
+    "revision": 0,
+    "rules": [
+        {
+            "primary-output": "x64\\Debug\\InspeccionCabecera.obj",
+            "outputs": [
+                "x64\\Debug\\InspeccionCabecera.cpp.obj.dt.module.json",
+                "x64\\Debug\\InspeccionCabecera.cpp.obj.dt.d.json",
+                "x64\\Debug\\UnidadRoboticaModel.pch"
+            ],
+            "requires": []
+        }
+    ]
+}

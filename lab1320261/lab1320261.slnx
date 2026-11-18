@@ -1,0 +1,10 @@
+<Solution>
+  <Configurations>
+    <Platform Name="x64" />
+    <Platform Name="x86" />
+  </Configurations>
+  <Project Path="lab1320261/lab1320261.vcxproj" />
+  <Project Path="UnidadRoboticaController/UnidadRoboticaController.vcxproj" />
+  <Project Path="UnidadRoboticaModel/UnidadRoboticaModel.vcxproj" />
+  <Project Path="UnidadRoboticaPersistence/UnidadRoboticaPersistence.vcxproj" />
+</Solution>

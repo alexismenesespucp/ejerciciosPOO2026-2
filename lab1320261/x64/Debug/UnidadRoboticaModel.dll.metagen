@@ -1,0 +1,54 @@
+ImageRuntimeVersion: v4.0.30319
+Assembly UnidadRoboticaModel, Version=1.0.*, Culture=Invariant Language (Invariant Country): 
+	hash=SHA1, flags=PublicKey
+Assembly mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System.Xml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Class UnidadRoboticaModel.InspeccionDetail: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    System.String notas 'get set' : 
+    System.String resultadoParametro 'get set' : 
+    System.String parametro 'get set' : 
+    Int32 detalleId 'get set' : 
+  Methods:
+    get_detalleId(): PrivateScope, Public, HideBySig, SpecialName
+    set_detalleId(Int32): PrivateScope, Public, HideBySig, SpecialName
+    get_parametro(): PrivateScope, Public, HideBySig, SpecialName
+    set_parametro(String): PrivateScope, Public, HideBySig, SpecialName
+    get_resultadoParametro(): PrivateScope, Public, HideBySig, SpecialName
+    set_resultadoParametro(String): PrivateScope, Public, HideBySig, SpecialName
+    get_notas(): PrivateScope, Public, HideBySig, SpecialName
+    set_notas(String): PrivateScope, Public, HideBySig, SpecialName
+Class UnidadRoboticaModel.InspeccionCabecera: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    System.Collections.Generic.List`1[UnidadRoboticaModel.InspeccionDetail] detalles 'get set' : 
+    System.DateTime fechaInspeccion 'get set' : 
+    System.String resultadoGeneral 'get set' : 
+    System.String inspector 'get set' : 
+    Int32 robotId 'get set' : 
+    System.String codigoLote 'get set' : 
+    Int32 inspeccionId 'get set' : 
+  Methods:
+    get_inspeccionId(): PrivateScope, Public, HideBySig, SpecialName
+    set_inspeccionId(Int32): PrivateScope, Public, HideBySig, SpecialName
+    get_codigoLote(): PrivateScope, Public, HideBySig, SpecialName
+    set_codigoLote(String): PrivateScope, Public, HideBySig, SpecialName
+    get_robotId(): PrivateScope, Public, HideBySig, SpecialName
+    set_robotId(Int32): PrivateScope, Public, HideBySig, SpecialName
+    get_inspector(): PrivateScope, Public, HideBySig, SpecialName
+    set_inspector(String): PrivateScope, Public, HideBySig, SpecialName
+    get_resultadoGeneral(): PrivateScope, Public, HideBySig, SpecialName
+    set_resultadoGeneral(String): PrivateScope, Public, HideBySig, SpecialName
+    get_fechaInspeccion(): PrivateScope, Public, HideBySig, SpecialName
+    set_fechaInspeccion(DateTime): PrivateScope, Public, HideBySig, SpecialName
+    get_detalles(): PrivateScope, Public, HideBySig, SpecialName
+    set_detalles(List`1): PrivateScope, Public, HideBySig, SpecialName
+Class UnidadRoboticaModel.Class1: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName

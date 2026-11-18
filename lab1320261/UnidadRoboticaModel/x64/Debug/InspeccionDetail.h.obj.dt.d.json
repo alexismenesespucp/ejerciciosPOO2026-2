@@ -1,0 +1,12 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "c:\\users\\alexis-pc\\onedrive\\documentos\\universidad\\courses\\programacion_orientada_a_objetos\\ejerciciospoo2026-2\\lab1320261\\unidadroboticamodel\\inspecciondetail.h",
+        "ProvidedModule": "",
+        "Includes": [
+            "c:\\users\\alexis-pc\\onedrive\\documentos\\universidad\\courses\\programacion_orientada_a_objetos\\ejerciciospoo2026-2\\lab1320261\\unidadroboticamodel\\pch.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}

@@ -1,0 +1,4 @@
+C:\Users\alexis-pc\OneDrive\Documentos\Universidad\Courses\Programacion_orientada_a_objetos\ejerciciosPOO2026-2\EsamblajeRoboticaView\UnidadRoboticaPersistence\x64\Debug\UnidadRoboticaPersistence.vcxproj.AssemblyReference.cache
+C:\Users\alexis-pc\OneDrive\Documentos\Universidad\Courses\Programacion_orientada_a_objetos\ejerciciosPOO2026-2\EsamblajeRoboticaView\UnidadRoboticaPersistence\x64\Debug\UnidadRo.A7A0F195.Up2Date
+C:\Users\alexis-pc\OneDrive\Documentos\Universidad\Courses\Programacion_orientada_a_objetos\ejerciciosPOO2026-2\lab1320261\UnidadRoboticaPersistence\x64\Debug\UnidadRoboticaPersistence.vcxproj.AssemblyReference.cache
+C:\Users\alexis-pc\OneDrive\Documentos\Universidad\Courses\Programacion_orientada_a_objetos\ejerciciosPOO2026-2\lab1320261\UnidadRoboticaPersistence\x64\Debug\UnidadRo.A7A0F195.Up2Date

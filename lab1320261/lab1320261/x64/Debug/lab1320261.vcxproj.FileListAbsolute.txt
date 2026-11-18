@@ -1,0 +1,4 @@
+C:\Users\alexis-pc\OneDrive\Documentos\Universidad\Courses\Programacion_orientada_a_objetos\ejerciciosPOO2026-2\EsamblajeRoboticaView\lab1320261\x64\Debug\lab1320261.vcxproj.AssemblyReference.cache
+C:\Users\alexis-pc\OneDrive\Documentos\Universidad\Courses\Programacion_orientada_a_objetos\ejerciciosPOO2026-2\EsamblajeRoboticaView\lab1320261\x64\Debug\lab13202.650DC246.Up2Date
+C:\Users\alexis-pc\OneDrive\Documentos\Universidad\Courses\Programacion_orientada_a_objetos\ejerciciosPOO2026-2\lab1320261\lab1320261\x64\Debug\lab1320261.vcxproj.AssemblyReference.cache
+C:\Users\alexis-pc\OneDrive\Documentos\Universidad\Courses\Programacion_orientada_a_objetos\ejerciciosPOO2026-2\lab1320261\lab1320261\x64\Debug\lab13202.650DC246.Up2Date

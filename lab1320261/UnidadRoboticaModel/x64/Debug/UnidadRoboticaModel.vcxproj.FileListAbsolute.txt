@@ -1,0 +1,2 @@
+C:\Users\alexis-pc\OneDrive\Documentos\Universidad\Courses\Programacion_orientada_a_objetos\ejerciciosPOO2026-2\EsamblajeRoboticaView\UnidadRoboticaModel\x64\Debug\UnidadRoboticaModel.vcxproj.AssemblyReference.cache
+C:\Users\alexis-pc\OneDrive\Documentos\Universidad\Courses\Programacion_orientada_a_objetos\ejerciciosPOO2026-2\lab1320261\UnidadRoboticaModel\x64\Debug\UnidadRoboticaModel.vcxproj.AssemblyReference.cache
