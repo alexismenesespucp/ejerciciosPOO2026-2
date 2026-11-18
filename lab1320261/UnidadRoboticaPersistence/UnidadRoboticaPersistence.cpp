@@ -36,9 +36,10 @@ namespace UnidadRoboticaPersistence {
 
 	int Database::crear_inspeccion(InspeccionCabecera^ inspeccion) {
 		SqlConnection^ connection = obtenerConexion();
+		connection->Open();
+		SqlTransaction^ transaccion = connection->BeginTransaction();
 		try {
-			connection->Open();
-			SqlTransaction^ transaccion = connection->BeginTransaction();
+			
 			SqlCommand^ cmdInsertMapa = gcnew SqlCommand("usp_CreateInspeccion", connection, transaccion);
 			cmdInsertMapa->CommandType = CommandType::StoredProcedure;
 
@@ -47,12 +48,20 @@ namespace UnidadRoboticaPersistence {
 			cmdInsertMapa->Parameters->AddWithValue("@Inspector", inspeccion->inspector);
 			cmdInsertMapa->Parameters->AddWithValue("@ResultadoGeneral", inspeccion->resultadoGeneral);
 
-			int insertedId = (int)cmdInsertMapa->ExecuteScalar();
+			//int insertedId = (int)cmdInsertMapa->ExecuteScalar();
+			SqlParameter^ insertedIdParam = gcnew SqlParameter("@InsertedId", SqlDbType::Int);
+			insertedIdParam->Direction = ParameterDirection::Output;
+			cmdInsertMapa->Parameters->Add(insertedIdParam);
 
-			return insertedId;
+			cmdInsertMapa->ExecuteNonQuery();
+
+			transaccion->Commit();
+
+			return (int)insertedIdParam->Value;
 		}
 		catch (Exception^ ex) {
 			Console::WriteLine("Error al crear la inspección: " + ex->Message);
+			transaccion->Rollback();
 			return -1; // Indicar error
 		}
 		finally {
