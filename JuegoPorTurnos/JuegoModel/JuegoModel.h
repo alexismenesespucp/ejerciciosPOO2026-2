@@ -62,5 +62,14 @@ namespace JuegoModel {
 			}
 			this->jugador1->Add(Point(i, j));
 		}
+
+		void PintarCeldaOpenente(int _x, int _y) {
+			int i = _x / this->tamanoCelda;
+			int j = _y / this->tamanoCelda;
+			if (i < 0 || i >= this->columnas || j < 0 || j >= this->filas) {
+				return;
+			}
+			this->jugador2->Add(Point(i, j));
+		}
 	};
 }

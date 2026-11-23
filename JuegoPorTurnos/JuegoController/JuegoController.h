@@ -20,6 +20,7 @@ namespace JuegoController {
 		static tablero^ tableroActual;
 		static void DibujarTablero(Graphics^ e);
 		static void PintarCelda(int x, int y);
+		static void PintarCeldaOponente(int x, int y);
 		static void  GuardarConexion(String^ IP) {
 			Database::GuardarConexion(IP);
 		}
@@ -42,7 +43,10 @@ namespace JuegoController {
 					int bytesRead = stream->Read(buffer, 0, buffer->Length);
 					if (bytesRead > 0) {
 						String^ message = System::Text::Encoding::UTF8->GetString(buffer, 0, bytesRead);
-						Console::WriteLine("Mensaje recibido: " + message);
+						array<String^>^ parts = message->Split(',');
+						int x = Convert::ToInt32(parts[0]);
+						int y = Convert::ToInt32(parts[1]);
+						Controller::PintarCelda(x, y);
 					}
 					// Aquí puedes manejar la comunicación con el cliente
 					client->Close();

@@ -181,6 +181,7 @@ private: System::Void pictureBox1_Click(System::Object^ sender, System::EventArg
 	int y = pictureBox1->PointToClient(Cursor->Position).Y;
 	
 	Controller::PintarCelda(x, y);
+	Controller::EnviarMensaje(this->comboBox1->SelectedItem->ToString(), x+","+y);
 
 	this->pictureBox1->Invalidate();
 

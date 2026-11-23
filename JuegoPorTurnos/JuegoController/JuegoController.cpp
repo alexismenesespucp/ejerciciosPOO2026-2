@@ -18,4 +18,12 @@ namespace  JuegoController {
 		}
 		tableroActual->PintarCelda(x, y);
 	}
+
+	void Controller::PintarCeldaOponente(int x, int y)
+	{
+		if (tableroActual == nullptr) {
+			tableroActual = gcnew tablero();
+		}
+		tableroActual->PintarCeldaOpenente(x, y);
+	}
 }

@@ -18,3 +18,4 @@ Class JuegoModel.tablero: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
   Methods:
     DibujarTablero(Graphics): PrivateScope, Public, HideBySig
     PintarCelda(Int32, Int32): PrivateScope, Public, HideBySig
+    PintarCeldaOpenente(Int32, Int32): PrivateScope, Public, HideBySig

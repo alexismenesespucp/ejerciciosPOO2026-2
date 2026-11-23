@@ -17,8 +17,6 @@ Assembly System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=
 	hash=None, flags=None
 Assembly System.Xml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
 	hash=None, flags=None
-Assembly JuegoPersistence, Version=1.0.*, Culture=Invariant Language (Invariant Country): 
-	hash=None, flags=None
 Class JuegoController.Controller: AutoLayout, AnsiClass, Class, Public, Abstract, Sealed, BeforeFieldInit
   Fields:
     System.Collections.Generic.List`1[System.String] ips : Public, Static
@@ -27,6 +25,7 @@ Class JuegoController.Controller: AutoLayout, AnsiClass, Class, Public, Abstract
   Methods:
     DibujarTablero(Graphics): PrivateScope, Public, Static, HideBySig
     PintarCelda(Int32, Int32): PrivateScope, Public, Static, HideBySig
+    PintarCeldaOponente(Int32, Int32): PrivateScope, Public, Static, HideBySig
     GuardarConexion(String): PrivateScope, Public, Static, HideBySig
     UpdateConexion(String): PrivateScope, Public, Static, HideBySig
     IniciarServidor(): PrivateScope, Public, Static, HideBySig
