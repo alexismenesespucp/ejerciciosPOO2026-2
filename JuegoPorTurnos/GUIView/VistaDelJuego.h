@@ -19,6 +19,7 @@ namespace GUIView {
 	{
 	public:
 		Thread^ threadConexion;
+		Thread^ threadServidor;
 		delegate void ActualizarConexion();
 		delegate void ObtenerConexionActivas();
 
@@ -35,6 +36,10 @@ namespace GUIView {
 			}
 			threadConexion = gcnew Thread(gcnew ThreadStart(this, &VistaDelJuego::ObtenerInformacionBaseDeDatos));
 			threadConexion->Start();
+
+			Thread^ threadServidor = gcnew Thread(gcnew ThreadStart(Controller::IniciarServidor));
+			threadServidor->IsBackground = true; // Esto hace que el hilo se cierre automáticamente cuando la aplicación principal se cierre
+			threadServidor->Start();
 		}
 
 		void ObtenerInformacionBaseDeDatos() {
@@ -147,6 +152,7 @@ namespace GUIView {
 			this->play->TabIndex = 3;
 			this->play->Text = L"Jugar";
 			this->play->UseVisualStyleBackColor = true;
+			this->play->Click += gcnew System::EventHandler(this, &VistaDelJuego::play_Click);
 			// 
 			// VistaDelJuego
 			// 
@@ -179,6 +185,10 @@ private: System::Void pictureBox1_Click(System::Object^ sender, System::EventArg
 	this->pictureBox1->Invalidate();
 
 	Console::WriteLine("X: " + x + " Y: " + y);
+}
+private: System::Void play_Click(System::Object^ sender, System::EventArgs^ e) {
+
+	Controller::EnviarMensaje(this->comboBox1->SelectedItem->ToString(), "Hola desde el cliente");
 }
 };
 }

@@ -21,6 +21,7 @@ Class GUIView.VistaDelJuego: AutoLayout, AnsiClass, Class, Public, BeforeFieldIn
     Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
   Fields:
     System.Threading.Thread threadConexion : Public
+    System.Threading.Thread threadServidor : Public
   Methods:
     ObtenerInformacionBaseDeDatos(): PrivateScope, Public, HideBySig
     ActualizarConexiones(): PrivateScope, Public, HideBySig

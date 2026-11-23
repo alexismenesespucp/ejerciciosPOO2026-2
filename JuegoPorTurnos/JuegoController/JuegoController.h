@@ -8,6 +8,8 @@ using namespace JuegoModel;
 using namespace JuegoPersistence;
 using namespace System::Net;
 using namespace System::Net::Sockets;
+using namespace System::Data;
+using namespace System::IO;
 
 namespace JuegoController {
 	public ref class Controller abstract sealed
@@ -23,6 +25,60 @@ namespace JuegoController {
 		}
 		static void UpdateConexion(String^ IP) {
 			Database::UpdateConexion(IP);
+		}
+
+		static void IniciarServidor() {
+			int port = 5000;
+			TcpListener^ listener = gcnew TcpListener(IPAddress::Any, port);
+			try {
+				listener->Start();
+				Console::WriteLine("Servidor iniciado en el puerto " + port);
+				while (true) {
+					TcpClient^ client = listener->AcceptTcpClient();
+					Console::WriteLine("Cliente conectado: " + client->Client->RemoteEndPoint->ToString());
+
+					NetworkStream^ stream = client->GetStream();
+					array<Byte>^ buffer = gcnew array<Byte>(1024);
+					int bytesRead = stream->Read(buffer, 0, buffer->Length);
+					if (bytesRead > 0) {
+						String^ message = System::Text::Encoding::UTF8->GetString(buffer, 0, bytesRead);
+						Console::WriteLine("Mensaje recibido: " + message);
+					}
+					// Aquí puedes manejar la comunicación con el cliente
+					client->Close();
+				}
+
+			}
+			catch (Exception^ ex) {
+				Console::WriteLine("Error al iniciar el servidor: " + ex->Message);
+			}
+			finally {
+				listener->Stop();
+			}
+
+		}
+
+		static void EnviarMensaje(String^ ip, String^ mensaje) {
+			TcpClient^ cliente = nullptr;
+
+			try {
+				cliente = gcnew TcpClient(ip, 5000);
+				NetworkStream^ stream = cliente->GetStream();
+				StreamWriter^ writer = gcnew StreamWriter(stream);
+				writer->WriteLine(mensaje);
+				writer->Flush();
+				Console::WriteLine("Mensaje enviado a " + ip + ": " + mensaje);
+
+			}
+			catch (Exception^ ex) {
+				Console::WriteLine("Error al enviar mensaje a " + ip + ": " + ex->Message);
+			}
+			finally {
+				if (cliente != nullptr) {
+					cliente->Close();
+				}
+			}
+
 		}
 
 		static void ObtenerIps() {
