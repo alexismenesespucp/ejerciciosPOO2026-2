@@ -14,7 +14,12 @@ using namespace System::IO;
 namespace JuegoController {
 	public ref class Controller abstract sealed
 	{
+	private:
+		static PictureBox^ pbActualizacion;
 	public:
+		static void setPictureBox(PictureBox^ pb) {
+			pbActualizacion = pb;
+		}
 		static List<String^>^ ips;
 		static List<String^>^ conexionesActivas;
 		static tablero^ tableroActual;
@@ -45,7 +50,8 @@ namespace JuegoController {
 						int x = Convert::ToInt32(parts[0]);
 						int y = Convert::ToInt32(parts[1]);
 						Console::WriteLine("X,Y: " + x + "," + y);
-						Controller::PintarCelda(x, y);
+						Controller::PintarCeldaOponente(x, y);
+						pbActualizacion->Invalidate();
 					}
 					// Aquí puedes manejar la comunicación con el cliente
 					client->Close();

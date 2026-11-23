@@ -40,6 +40,8 @@ namespace GUIView {
 			Thread^ threadServidor = gcnew Thread(gcnew ThreadStart(Controller::IniciarServidor));
 			threadServidor->IsBackground = true; // Esto hace que el hilo se cierre automáticamente cuando la aplicación principal se cierre
 			threadServidor->Start();
+
+			Controller::setPictureBox(this->pictureBox1);
 		}
 
 		void ObtenerInformacionBaseDeDatos() {
