@@ -42,6 +42,7 @@ namespace GUIView {
 				Thread::Sleep(5000);
 				ActualizarConexion^ actualizar = gcnew ActualizarConexion(this, &VistaDelJuego::ActualizarConexiones);
 				ObtenerConexionActivas^ obtener = gcnew ObtenerConexionActivas(this, &VistaDelJuego::ObtenerConexionesActivas);
+				this->Invoke(obtener);
 				this->Invoke(actualizar);
 			}
 		}
@@ -61,6 +62,9 @@ namespace GUIView {
 					Console::WriteLine("Conexión activa propia: " + conexion);
 				}
 				else {
+					if (this->comboBox1->Items->Contains(conexion)) {
+						continue;
+					}
 					this->comboBox1->Items->Add(conexion);
 				}
 				Console::WriteLine("Conexión activa: " + conexion);

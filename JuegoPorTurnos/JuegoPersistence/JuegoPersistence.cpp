@@ -54,12 +54,13 @@ namespace JuegoPersistence {
 		try {
 			SqlConnection^ connection = obtenerConexion();
 			connection->Open();
-			String^ query = "SELECT COUNT(1) FROM UsuariosConectados "
-				"WHERE IP = @IP AND DATEDIFF(SECOND, lastUpdate, GETDATE()) <= 5";
+			String^ query = "SELECT * FROM UsuariosConectados WHERE DATEDIFF(SECOND, lastUpdate, GETDATE()) <= 5";
 			SqlCommand^ command = gcnew SqlCommand(query, connection);
 			SqlDataReader^ reader = command->ExecuteReader();
 			while (reader->Read()) {
-				conexiones->Add(reader->GetString(0));
+				String^ IP = reader->GetString(0);
+				Console::WriteLine("IP " + IP);
+				conexiones->Add(IP);
 			}
 			reader->Close();
 			connection->Close();
