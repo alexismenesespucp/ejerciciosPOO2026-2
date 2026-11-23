@@ -64,7 +64,7 @@ namespace GUIView {
 
 			for each (String^ conexion in conexiones) {
 				if (Controller::ips->Contains(conexion)) {
-					Console::WriteLine("Conexión activa propia: " + conexion);
+
 				}
 				else {
 					if (this->comboBox1->Items->Contains(conexion)) {
@@ -72,10 +72,8 @@ namespace GUIView {
 					}
 					this->comboBox1->Items->Add(conexion);
 				}
-				Console::WriteLine("Conexión activa: " + conexion);
 			}
 
-			Console::WriteLine("Conexiones activas: " + conexiones->Count);
 		}
 
 	protected:

@@ -43,6 +43,8 @@ namespace JuegoModel {
 				g->FillRectangle(brochaPared, x, y, tamanoCelda, tamanoCelda);
 				g->DrawRectangle(gcnew Pen(Color::FromArgb(0, 0, 0), 1), x, y, tamanoCelda, tamanoCelda);
 			}
+			Console::WriteLine("Dibujando tablero + " + jugador2->Count);
+
 			for each (Point p in jugador2) {
 				int x = p.X * tamanoCelda;
 				int y = p.Y * tamanoCelda;

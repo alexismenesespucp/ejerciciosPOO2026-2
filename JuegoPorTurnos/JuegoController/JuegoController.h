@@ -36,8 +36,6 @@ namespace JuegoController {
 				Console::WriteLine("Servidor iniciado en el puerto " + port);
 				while (true) {
 					TcpClient^ client = listener->AcceptTcpClient();
-					Console::WriteLine("Cliente conectado: " + client->Client->RemoteEndPoint->ToString());
-
 					NetworkStream^ stream = client->GetStream();
 					array<Byte>^ buffer = gcnew array<Byte>(1024);
 					int bytesRead = stream->Read(buffer, 0, buffer->Length);
@@ -46,6 +44,7 @@ namespace JuegoController {
 						array<String^>^ parts = message->Split(',');
 						int x = Convert::ToInt32(parts[0]);
 						int y = Convert::ToInt32(parts[1]);
+						Console::WriteLine("X,Y: " + x + "," + y);
 						Controller::PintarCelda(x, y);
 					}
 					// Aquí puedes manejar la comunicación con el cliente

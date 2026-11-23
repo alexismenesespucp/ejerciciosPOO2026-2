@@ -59,7 +59,6 @@ namespace JuegoPersistence {
 			SqlDataReader^ reader = command->ExecuteReader();
 			while (reader->Read()) {
 				String^ IP = reader->GetString(0);
-				Console::WriteLine("IP " + IP);
 				conexiones->Add(IP);
 			}
 			reader->Close();
