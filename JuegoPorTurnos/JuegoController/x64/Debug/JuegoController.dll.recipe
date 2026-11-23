@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project>
+  <ProjectOutputs>
+    <ProjectOutput>
+      <FullPath>C:\Users\alexis-pc\OneDrive\Documentos\Universidad\Courses\Programacion_orientada_a_objetos\ejerciciosPOO2026-2\JuegoPorTurnos\x64\Debug\JuegoModel.dll</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>C:\Users\alexis-pc\OneDrive\Documentos\Universidad\Courses\Programacion_orientada_a_objetos\ejerciciosPOO2026-2\JuegoPorTurnos\x64\Debug\JuegoPersistence.dll</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>C:\Users\alexis-pc\OneDrive\Documentos\Universidad\Courses\Programacion_orientada_a_objetos\ejerciciosPOO2026-2\JuegoPorTurnos\x64\Debug\JuegoController.dll</FullPath>
+    </ProjectOutput>
+  </ProjectOutputs>
+  <ContentFiles />
+  <SatelliteDlls />
+  <NonRecipeFileRefs />
+</Project>

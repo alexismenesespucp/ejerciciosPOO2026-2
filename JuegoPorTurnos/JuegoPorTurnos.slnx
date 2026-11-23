@@ -1,0 +1,10 @@
+<Solution>
+  <Configurations>
+    <Platform Name="x64" />
+    <Platform Name="x86" />
+  </Configurations>
+  <Project Path="GUIView/GUIView.vcxproj" />
+  <Project Path="JuegoController/JuegoController.vcxproj" />
+  <Project Path="JuegoModel/JuegoModel.vcxproj" />
+  <Project Path="JuegoPersistence/JuegoPersistence.vcxproj" />
+</Solution>

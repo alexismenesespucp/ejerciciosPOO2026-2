@@ -1,0 +1,31 @@
+ImageRuntimeVersion: v4.0.30319
+Assembly JuegoController, Version=1.0.*, Culture=Invariant Language (Invariant Country): 
+	hash=SHA1, flags=PublicKey
+Assembly mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly JuegoModel, Version=1.0.*, Culture=Invariant Language (Invariant Country): 
+	hash=None, flags=None
+Assembly JuegoPersistence, Version=1.0.*, Culture=Invariant Language (Invariant Country): 
+	hash=None, flags=None
+Assembly System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a: 
+	hash=None, flags=None
+Assembly System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System.Xml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Class JuegoController.Controller: AutoLayout, AnsiClass, Class, Public, Abstract, Sealed, BeforeFieldInit
+  Fields:
+    System.Collections.Generic.List`1[System.String] ips : Public, Static
+    System.Collections.Generic.List`1[System.String] conexionesActivas : Public, Static
+    JuegoModel.tablero tableroActual : Public, Static
+  Methods:
+    DibujarTablero(Graphics): PrivateScope, Public, Static, HideBySig
+    PintarCelda(Int32, Int32): PrivateScope, Public, Static, HideBySig
+    GuardarConexion(String): PrivateScope, Public, Static, HideBySig
+    UpdateConexion(String): PrivateScope, Public, Static, HideBySig
+    ObtenerIps(): PrivateScope, Public, Static, HideBySig
+    ObtenerConexionActivas(): PrivateScope, Public, Static, HideBySig

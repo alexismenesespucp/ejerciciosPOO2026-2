@@ -1,0 +1,2 @@
+C:\Users\alexis-pc\OneDrive\Documentos\Universidad\Courses\Programacion_orientada_a_objetos\ejerciciosPOO2026-2\JuegoPorTurnos\JuegoPersistence\x64\Debug\JuegoPersistence.vcxproj.AssemblyReference.cache
+C:\Users\alexis-pc\OneDrive\Documentos\Universidad\Courses\Programacion_orientada_a_objetos\ejerciciosPOO2026-2\JuegoPorTurnos\JuegoPersistence\x64\Debug\JuegoPer.D7590A94.Up2Date
